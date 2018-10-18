@@ -1,0 +1,67 @@
+product_array={'':'','2292':{
+        'id':'2292',
+        'product_id':'MHH11',
+        'name':'Cafe ban me',
+        'price':'409000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'60',
+        'unit':'Cốc',
+        'unit_id':'103',
+        'type':'GOODS'}
+        ,'2293':{
+        'id':'2293',
+        'product_id':'MHH12',
+        'name':'Vịt quay bắc kinh',
+        'price':'100000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'26',
+        'unit':'Đĩa',
+        'unit_id':'120',
+        'type':'PRODUCT'}
+        ,'2294':{
+        'id':'2294',
+        'product_id':'MHH13',
+        'name':'Thịt vịt',
+        'price':'50000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'53',
+        'unit':'Kg',
+        'unit_id':'85',
+        'type':'MATERIAL'}
+        ,'2295':{
+        'id':'2295',
+        'product_id':'MHH14',
+        'name':'Mật ong',
+        'price':'5000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'53',
+        'unit':'Gói',
+        'unit_id':'131',
+        'type':'MATERIAL'}
+        ,'2296':{
+        'id':'2296',
+        'product_id':'MHH15',
+        'name':'GIa vị',
+        'price':'5000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'53',
+        'unit':'Gói',
+        'unit_id':'131',
+        'type':'MATERIAL'}
+        ,'2307':{
+        'id':'2307',
+        'product_id':'Q1',
+        'name':'quynh',
+        'price':'1000000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'60',
+        'unit':'Bao',
+        'unit_id':'132',
+        'type':'GOODS'}
+        }

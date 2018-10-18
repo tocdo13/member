@@ -1,0 +1,61 @@
+product_array={'':'','109':{
+                    'id':'109',
+                    'product_id':'DAN001',
+                    'name':'Bim bim',
+                    'price':'10000',
+                    'price_id':'109',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    ,'110':{
+                    'id':'110',
+                    'product_id':'DAN003',
+                    'name':'Kẹo M&M',
+                    'price':'20000',
+                    'price_id':'110',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    ,'111':{
+                    'id':'111',
+                    'product_id':'TTB01',
+                    'name':'Duvet',
+                    'price':'30000',
+                    'price_id':'111',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'10',
+                    'unit':'Chiếc',
+                    'unit_id':'2',
+                    'type':'EQUIPMENT'}
+                    ,'112':{
+                    'id':'112',
+                    'product_id':'DOUTSIDE',
+                    'name':'Đồ uống ngoài',
+                    'price':'0',
+                    'price_id':'112',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'3',
+                    'unit':'Chai',
+                    'unit_id':'3',
+                    'type':'PRODUCT'}
+                    ,'113':{
+                    'id':'113',
+                    'product_id':'FOUTSIDE',
+                    'name':'Đồ ăn ngoài',
+                    'price':'0',
+                    'price_id':'113',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'4',
+                    'unit':'Suất',
+                    'unit_id':'6',
+                    'type':'PRODUCT'}
+                    }

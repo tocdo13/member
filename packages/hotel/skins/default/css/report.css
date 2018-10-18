@@ -1,0 +1,39 @@
+.report-wrapper a,.report-wrapper td,.report-wrapper span,.report-wrapper div{
+	font-size:14px;
+}
+a.report_table_header
+{
+	background-color:#FFFFFF;
+	font-weight:bold;
+	font-size:12px;
+	line-height:20px;
+	color:#000000;
+	text-align:center;
+}
+.report_table_header
+{
+	background-color:#FFFFFF;
+	font-weight:bold;
+	font-size:12px;
+	padding:5px;
+	color:#000000;
+}
+.report_table_column
+{
+	padding:3px;
+}
+a.td_title
+{
+	color:#000000;
+}
+.report-title
+{
+	font-size:22px !important;
+	font-weight:bold;
+	text-align:center;
+}
+.report_sub_title
+{
+	font-weight:normal;
+	padding:5px;
+}

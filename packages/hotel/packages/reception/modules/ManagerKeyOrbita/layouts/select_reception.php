@@ -1,0 +1,38 @@
+<form method="POST" name="SelectReceptionForm" >
+    <table width ="100%">
+        <tr>
+            <td align="center" width="100%" >
+                <table width ="800px" >
+                    <tr>
+                        <td style="width: 60px; " ><img src="skins/default/images/icon/337.gif" style="width: 60px; height: 50px; " /></td>
+                        <td style=" font-size: 14px; font-weight: bold; color: #0066CC; height: 50px; " align="left" >[[.select_reception.]]</td>
+                    </tr>
+                </table>
+                <table width="800px" style="border: 1px solid #087E85; " >
+                    <tr>
+                        <td width ="100%" height="auto" align="center" style="background-color: silver; " >
+                            <div style=" width:600px; border: 3px inset gray; background-color: white; padding-right: 10px; margin: 20px 20px;">
+                                <table width="100%" style="margin-top: 10px;">
+                                   <tr height="60px">
+                                        <td align="center">
+                                            <span style="font-weight: bold; font-size: 14px;">[[.reception.]]</span>
+                                            <select id="reception_id" name="reception_id" style="width: 80px;" >
+                                                [[|reception_id|]]
+                                            </select>
+                                            &nbsp;&nbsp;&nbsp;
+                                            <input id="go" name="go" type="submit" value="[[.go.]]" style="width: 100px; height: 40px; font-size: 16px; font-weight: bold; color: #1F6B7A; " />
+                                        </td>
+                                    </tr> 
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" value="" name="width" id="width" />
+</form>
+<script type="text/javascript">
+    jQuery("#width").val(screen.width);
+</script>

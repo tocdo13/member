@@ -1,0 +1,74 @@
+.setting-bound{
+	padding:5px;
+	clear:both;
+	border:1px solid #31495F;
+}
+.setting-notice{
+	color:red;
+	margin-left:155px;
+}
+.setting-notice-bound{
+	height:18px;
+}
+.setting-field{
+	margin-top:5px;
+	margin-bottom:5px;	
+	border-bottom:1px dotted #CCCCCC;
+}
+.setting-field label{
+	display:block;
+	float:left;
+	width:200px;
+	text-align:right;
+	margin-right:5px;
+	color:#0066CC;
+}
+.setting-field input{
+	width:250px;
+	height:20px;
+	font-weight:bold;
+	color:#FF3300;
+}
+.setting-field textarea{
+	width:250px;
+	font-weight:bold;
+	color:#FF3300;	
+}
+.setting-button{
+	margin-top:10px;
+	margin-left:155px;
+}
+.setting-tab div a:hover{
+	text-decoration:none;
+}
+.setting-tab div.bound{
+	float:left;
+	margin-top:5px;
+	margin-right:2px;
+	height:25px;
+}
+.setting-tab div.selected{
+	font-weight:bold;
+	background:url(../images/tab/tab-selected-bg.png) 0% 0% repeat-x;
+	line-height:24px;
+}
+.setting-tab div.selected div{
+	background:url(../images/tab/tab-selected-left.png) 0% 0% no-repeat;
+}
+.setting-tab div.selected div div{
+	background:url(../images/tab/tab-selected-right.png) 100% 0% no-repeat;
+	padding-left:5px;
+	padding-right:5px;
+}
+.setting-tab div.normal{
+	background:url(../images/tab/tab-bg.png) 0% 0% repeat-x;
+	line-height:25px;
+}
+.setting-tab div.normal div{
+	background:url(../images/tab/tab-left.png) 0% 0% no-repeat;
+}
+.setting-tab div.normal div div{
+	background:url(../images/tab/tab-right.png) 100% 0% no-repeat;
+	padding-left:5px;
+	padding-right:5px;
+}

@@ -1,0 +1,16 @@
+﻿----------------------ROOM-----08/07/2013-----------------------
+1) Room: 302 - Recode: 43 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 11h:09 08/07/2013 - Departure time: 12h:00 09/07/2013 - Link: ?page=reservation&cmd=edit&id=43&r_r_id=57&portal=default
+2) Room: 109 - Recode: 41 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 10h:52 08/07/2013 - Departure time: 12h:00 09/07/2013 - Link: ?page=reservation&cmd=edit&id=41&r_r_id=55&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: AN DINH LUAN - Room: 109 - Recode: 41 - Guest status: CHECKIN - Room arrival time: 10h:52 08/07/2013 - Room departure time: 12h:00 09/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

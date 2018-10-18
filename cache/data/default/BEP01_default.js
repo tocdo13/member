@@ -1,0 +1,37 @@
+product_array={'':'','1403':{
+                    'id':'1403',
+                    'product_id':'TTB04',
+                    'name':'TEST65',
+                    'price':'90000',
+                    'price_id':'1403',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'111',
+                    'unit':'Chiếc',
+                    'unit_id':'14',
+                    'type':'EQUIPMENT'}
+                    ,'1405':{
+                    'id':'1405',
+                    'product_id':'TETK01',
+                    'name':'Mon hang test kho 01',
+                    'price':'10000',
+                    'price_id':'1405',
+                    'start_date':'23/08/2017',
+                    'end_date':'0',
+                    'category_id':'161',
+                    'unit':'Bịch',
+                    'unit_id':'95',
+                    'type':'GOODS'}
+                    ,'1406':{
+                    'id':'1406',
+                    'product_id':'TETK02',
+                    'name':'Mon hang test kho 02',
+                    'price':'10000',
+                    'price_id':'1406',
+                    'start_date':'21/08/2017',
+                    'end_date':'0',
+                    'category_id':'161',
+                    'unit':'Bịch',
+                    'unit_id':'95',
+                    'type':'GOODS'}
+                    }

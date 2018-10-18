@@ -1,0 +1,101 @@
+/* CSS Document */
+.booking_table
+{
+	background:url(images/booking_bg.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+a.table:hover,a.table_RESERVATION:hover,a.table_ready:hover,a.table_unready:hover,a.table_CHECKIN:hover,a.table_CHECKOUT:hover,a.table_busy:hover,a.table_select,a.table_overdue:hover{
+	background-color:#F0F6DE;
+	color:black;
+}
+a.table_drag,a.table,a.table_RESERVATION,a.table_ready,a.table_unready,a.table_CHECKIN,a.table_CHECKOUT,a.table_busy,a.table_select,a.table_overdue{
+	width:100px;
+	height:50px;
+	text-align:center;
+	vertical-align:middle;
+	display:block;
+	font-size:13px;
+	line-height:15px;
+	padding-top:0px;
+	background-color:#FFFFFF;
+}
+a.table{
+	background-color:white;
+}
+a.table_select{
+	background-color:#006699;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+a.table_drag{
+	border:2px solid black;
+	height:46px;
+}
+a.table_RESERVATION{
+	background-color:#0066FF;
+	color:#FFFFFF;
+}
+a.table_unready{
+	background-color:#999999;
+	color:#EBEADC;
+}
+a.table_CHECKIN,a.table_CHECKOUT{
+	background-color:#FFFF00;
+}
+a.table_busy{
+	background-color:#EBEADC;
+}
+a.table_overdue{
+	background-color:#FF0000;
+	color:white;
+}
+.table_arround
+{
+	background-color:#F0F6DE;
+	padding:0 0 0 0;
+	border:1px solid #EBEADC;
+	border-right:2px solid #EBEADC;
+	border-bottom:2px solid #999999;	
+}
+
+.label{
+	background-color:#FFFFFF;
+	width:100px;
+	overflow:hidden;
+}
+.value{
+	background-color:#FFFFFF;
+	width:190px;
+}
+a.table_menu
+{
+	display:block;
+	color:#5D5959;
+	background-color:#FFFFFF;
+	border-bottom:1px solid #D1DBDC;
+	width:100%;
+	line-height:24px;
+	font-size:11px;
+	text-indent:10px;
+	font-weight:bold;
+	text-align:left;
+}
+a.table_menu:hover
+{
+	color:#000000;
+	font-size:11px;
+	background-color:#EFEEEE;
+}
+
+/*------------------------------------------------------------*/
+.readonly_input
+{
+	background-color:#E2F0DF; 
+	border:0px; 
+	border-bottom:1px dotted black;
+	padding: 0px 4px 0px 4px;
+	font-weight:bold;
+}
+
+/*------------------------------------------------------------*/

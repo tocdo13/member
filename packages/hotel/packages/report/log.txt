@@ -1,0 +1,4 @@
+29/10/2009:	- Update Module : 
+	- BarReservationCancelledReport 
+01/12/2009: - ngocnv update module
+	- RestaurantRevenueReport : Bao cao thanh toan = tien te

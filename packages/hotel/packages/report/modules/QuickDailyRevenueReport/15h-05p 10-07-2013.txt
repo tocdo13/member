@@ -1,0 +1,29 @@
+﻿----------------------ROOM-----10/07/2013-----------------------
+1) Room: 212 - Recode: 62 - Status: CHECKIN - Change price: 2,700,000 - Arrival time: 09h:35 10/07/2013 - Departure time: 12h:00 12/07/2013 - Link: ?page=reservation&cmd=edit&id=62&r_r_id=86&portal=default
+2) Room: 211 - Recode: 62 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 09h:35 10/07/2013 - Departure time: 12h:00 12/07/2013 - Link: ?page=reservation&cmd=edit&id=62&r_r_id=85&portal=default
+3) Room: 128 - Recode: 60 - Status: CHECKIN - Change price: 1,900,000 - Arrival time: 16h:57 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=60&r_r_id=83&portal=default
+4) Room: 110 - Recode: 59 - Status: CHECKIN - Change price: 2,700,000 - Arrival time: 15h:28 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=59&r_r_id=81&portal=default
+5) Room: 102 - Recode: 58 - Status: CHECKIN - Change price: 3,800,000 - Arrival time: 15h:18 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=58&r_r_id=79&portal=default
+6) Room: 103 - Recode: 57 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:41 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=57&r_r_id=77&portal=default
+7) Room: 201 - Recode: 56 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 14h:34 07/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=56&r_r_id=75&portal=default
+8) Room: 525 - Recode: 55 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 13h:37 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=55&r_r_id=74&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: DAG DFA - Room: 211 - Recode: 62 - Guest status: CHECKIN - Room arrival time: 09h:35 10/07/2013 - Room departure time: 12h:00 12/07/2013
+2) Full name: Đ DD - Room: 211 - Recode: 62 - Guest status: CHECKIN - Room arrival time: 09h:35 10/07/2013 - Room departure time: 12h:00 12/07/2013
+3) Full name: PHAM NHAT DUNG - Room: 128 - Recode: 60 - Guest status: CHECKIN - Room arrival time: 16h:57 09/07/2013 - Room departure time: 12h:00 11/07/2013
+4) Full name: NGUYEN HUONG - Room: 128 - Recode: 60 - Guest status: CHECKIN - Room arrival time: 16h:57 09/07/2013 - Room departure time: 12h:00 11/07/2013
+5) Full name: A A - Room: 110 - Recode: 59 - Guest status: CHECKIN - Room arrival time: 15h:28 09/07/2013 - Room departure time: 12h:00 11/07/2013
+6) Full name: THAI THUY TRINH - Room: 103 - Recode: 57 - Guest status: CHECKIN - Room arrival time: 14h:41 09/07/2013 - Room departure time: 12h:00 11/07/2013
+7) Full name: TRAN PHU - Room: 201 - Recode: 56 - Guest status: CHECKIN - Room arrival time: 14h:34 07/07/2013 - Room departure time: 12h:00 11/07/2013
+8) Full name: TEST DOI PHONG - Room: 525 - Recode: 55 - Guest status: CHECKIN - Room arrival time: 13h:37 09/07/2013 - Room departure time: 12h:00 11/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

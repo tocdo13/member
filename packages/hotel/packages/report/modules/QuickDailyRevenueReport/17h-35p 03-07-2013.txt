@@ -1,0 +1,24 @@
+﻿----------------------ROOM-----03/07/2013-----------------------
+1) Room: 105 - Recode: 26 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 17h:31 03/07/2013 - Departure time: 12h:00 06/07/2013 - Link: ?page=reservation&cmd=edit&id=26&r_r_id=41&portal=default
+2) Room: 101 - Recode: 24 - Status: CHECKIN - Change price: 0 - Arrival time: 15h:50 03/07/2013 - Departure time: 12h:00 04/07/2013 - Link: ?page=reservation&cmd=edit&id=24&r_r_id=38&portal=default
+3) Room: 114 - Recode: 21 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 10h:22 03/07/2013 - Departure time: 12h:00 04/07/2013 - Link: ?page=reservation&cmd=edit&id=21&r_r_id=35&portal=default
+4) Room: 120 - Recode: 20 - Status: CHECKIN - Change price: 2,600,000 - Arrival time: 10h:03 03/07/2013 - Departure time: 12h:00 04/07/2013 - Link: ?page=reservation&cmd=edit&id=20&r_r_id=33&portal=default
+5) Room: 104 - Recode: 19 - Status: CHECKIN - Change price: 2,700,000 - Arrival time: 09h:59 03/07/2013 - Departure time: 12h:00 04/07/2013 - Link: ?page=reservation&cmd=edit&id=19&r_r_id=31&portal=default
+6) Room: 102 - Recode: 1 - Status: CHECKIN - Change price: 3,800,000 - Arrival time: 09h:12 03/07/2013 - Departure time: 12h:00 10/07/2013 - Link: ?page=reservation&cmd=edit&id=1&r_r_id=29&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: NGUYEN MINH - Room: 105 - Recode: 26 - Guest status: CHECKIN - Room arrival time: 17h:31 03/07/2013 - Room departure time: 12h:00 06/07/2013
+2) Full name: HÀ HOA - Room: 114 - Recode: 21 - Guest status: CHECKIN - Room arrival time: 10h:22 03/07/2013 - Room departure time: 12h:00 04/07/2013
+3) Full name: HA HOA - Room: 120 - Recode: 20 - Guest status: CHECKIN - Room arrival time: 10h:03 03/07/2013 - Room departure time: 12h:00 04/07/2013
+4) Full name: Đ F - Room: 104 - Recode: 19 - Guest status: CHECKIN - Room arrival time: 09h:59 03/07/2013 - Room departure time: 12h:00 04/07/2013
+5) Full name: MINH NGOC - Room: 102 - Recode: 1 - Guest status: CHECKIN - Room arrival time: 09h:12 03/07/2013 - Room departure time: 12h:00 10/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

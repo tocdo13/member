@@ -1,0 +1,74 @@
+<?php
+class GolfPitchPriceManagerForm extends Form
+{
+	function GolfPitchPriceManagerForm()
+    {
+		Form::Form('GolfPitchPriceManagerForm');
+        $this->link_css(Portal::template('core').'/css/jquery/datepicker.css');
+        $this->link_js('packages/core/includes/js/jquery/datepicker.js'); 
+        $this->link_js('packages/core/includes/js/jquery/jquery.maskedinput.js');
+    }
+    
+    function on_submit(){
+        if(Url::get('act')=='SAVE' and isset($_REQUEST['golf_pitch_price'])){
+            foreach($_REQUEST['golf_pitch_price'] as $key=>$value){
+                if(DB::exists('select id from golf_pitch_price where id='.$key)){
+                    $price = System::calculate_number($value['price']);
+                    if($price>0){
+                        DB::update('golf_pitch_price',array('price'=>$price),'id='.$key);
+                    }else{
+                        DB::delete('golf_pitch_price','id='.$key);
+                    }
+                }
+            }
+        }
+        Url::redirect('golf_pitch_price_manager',array('in_date'=>Url::get('in_date')));
+    }
+	function draw()
+    {
+        $this->map = array();
+        $this->map['in_date'] = $_REQUEST['in_date'] = isset($_REQUEST['in_date'])?$_REQUEST['in_date']:date('d/m/Y');
+        $this->map['in_time'] = Date_Time::to_time($this->map['in_date']);
+        $this->map['golf_hole'] = DB::fetch_all("SELECT * 
+                                    FROM golf_hole
+                                    WHERE portal_id='".PORTAL_ID."'
+                                    ORDER BY name
+                                    ");
+        $this->map['group_traveller'] = DB::fetch_all("SELECT * 
+                                        FROM group_traveller
+                                        ORDER BY name
+                                        ");
+        $timeline = array();
+        $in_time = Date_Time::to_time($this->map['in_date']);
+        $this->map['count_time'] = 0;
+        for($i=0;$i<86400;$i+=3600){
+            $this->map['count_time']++;
+            $timeline[$i]['id'] = $i;
+            $timeline[$i]['in_time'] = $i+$in_time;
+            $timeline[$i]['in_house'] = date('H:i',$timeline[$i]['in_time']);
+        }
+        $this->map['timeline'] = $timeline;
+        
+        $this->map['items'] = DB::fetch_all('
+                                    SELECT
+                                        golf_pitch_price.*,
+                                        TO_CHAR(golf_pitch_price.in_date,\'DD/MM/YYYY\') as in_date
+                                    FROM
+                                        golf_pitch_price
+                                        inner join golf_hole on golf_hole.id=golf_pitch_price.golf_hole_id
+                                        inner join group_traveller on group_traveller.id=golf_pitch_price.group_traveller_id
+                                    WHERE
+                                        golf_pitch_price.in_date=\''.Date_Time::to_orc_date($this->map['in_date']).'\'
+                                        and golf_pitch_price.portal_id=\''.PORTAL_ID.'\'
+                                    ORDER BY
+                                        golf_pitch_price.start_time DESC
+                                    ');
+        $this->parse_layout('list',$this->map);
+    }
+    function calc_time($string)
+    {
+        $arr = explode(':',$string);
+        return $arr[0]*3600 + $arr[1]*60;
+    }
+}
+?>        

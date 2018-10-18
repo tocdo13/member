@@ -1,0 +1,61 @@
+.pitch{
+    width: 400px;
+    height: 200px;
+    border: 1px solid orange;
+    background-color: 	#A9A9A9;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    background-image: url('football-pitch-bg.png');
+    background-repeat: no-repeat;
+    background-size: 400px 200px;
+}
+.pitch-price-button{
+    float: bottom;
+    position: absolute;
+    top: 183px;
+    right: -4px;
+    display: block;
+    cursor: pointer;
+}
+.pitch-calendar-button{
+    float: bottom;
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    display: block;
+    cursor: pointer;
+}
+.pitch-add-match-button{
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    display: block;
+    cursor: pointer;
+}
+.pitch-title{
+    margin: 0px auto;
+    width: 400px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.pitch-price-table{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: none;
+}
+.pitch-price-table tr{
+    border-bottom: 1px solid #A9A9A9;
+    height: 25px;
+}
+.pitch-price-table input[type=text]{
+    border: none;
+    outline: none;
+    width: 95px;
+}
+.date{
+    text-align: center;
+    width: 80px;
+    height: 33px;
+}

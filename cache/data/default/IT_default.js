@@ -1,0 +1,73 @@
+product_array={'':'','103':{
+                    'id':'103',
+                    'product_id':'DAN001',
+                    'name':'Bim bim',
+                    'price':'10000',
+                    'price_id':'103',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    ,'104':{
+                    'id':'104',
+                    'product_id':'BIA003',
+                    'name':'Bia Ken',
+                    'price':'15000',
+                    'price_id':'104',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'7',
+                    'unit':'Lon',
+                    'unit_id':'1',
+                    'type':'GOODS'}
+                    ,'105':{
+                    'id':'105',
+                    'product_id':'DAN003',
+                    'name':'Kẹo M&M',
+                    'price':'20000',
+                    'price_id':'105',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    ,'106':{
+                    'id':'106',
+                    'product_id':'TTB04',
+                    'name':'Tissue box',
+                    'price':'25000',
+                    'price_id':'106',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'10',
+                    'unit':'Chiếc',
+                    'unit_id':'2',
+                    'type':'EQUIPMENT'}
+                    ,'107':{
+                    'id':'107',
+                    'product_id':'DOUTSIDE',
+                    'name':'Đồ uống ngoài',
+                    'price':'0',
+                    'price_id':'107',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'3',
+                    'unit':'Chai',
+                    'unit_id':'3',
+                    'type':'PRODUCT'}
+                    ,'108':{
+                    'id':'108',
+                    'product_id':'FOUTSIDE',
+                    'name':'Đồ ăn ngoài',
+                    'price':'0',
+                    'price_id':'108',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'4',
+                    'unit':'Suất',
+                    'unit_id':'6',
+                    'type':'PRODUCT'}
+                    }

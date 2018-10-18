@@ -1,0 +1,161 @@
+.calendar-bound{
+	
+}
+a.datetime_button,a.datetime_button_selected
+{
+	font-weight:bold;
+	width:50px;
+	height:18px;
+	display:block;
+	text-align:center;
+	line-height:18px;
+	vertical-align:middle;
+	margin:1px;
+}
+a.datetime_button:link,a.datetime_button:visited
+{
+	color:#000000;
+	background-color:#E2E2E2;
+	border:1px solid #FFFFFF;
+	font-weight:normal;
+}
+a.datetime_button_selected:link,a.datetime_button_selected:visited
+{
+	color:black;
+	background-color:#DDEEFF;
+	border:1px solid #6CB6FF;
+	margin:1px;	
+}
+a.datetime_button:hover, a.datetime_button_selected:hover
+{
+	color:black;
+	background-color:#EFEFEF;
+	border:1px solid #99CC00;	
+	margin-top:1px;		
+}
+
+a.month_button,a.month_button_selected
+{
+	width:50px;
+	height:18px;
+	display:block;
+	text-align:center;
+	line-height:18px;
+	vertical-align:middle;
+	margin:1px;
+	background-color:#FFFFFF;
+}
+a.month_button:link,a.month_button:visited
+{
+	color:#000000;
+	background-color:white;
+	border:1px solid #6CB6FF;
+}
+a.month_button_selected:link,a.month_button_selected:visited
+{
+	color:black;
+	background-color:#BFDFFF;
+	border:1px solid #6CB6FF;
+	margin:1px;	
+}
+a.month_button:hover, a.month_button_selected:hover
+{
+	color:black;
+	background-color:#EFEFEF;
+	border:1px solid #99CC00;	
+	margin-top:1px;		
+}
+
+a.day_button,a.day_button_selected 
+{
+	width:28px;
+	height:22px;
+	display:block;
+	text-align:center;
+	line-height:22px;
+	vertical-align:middle;
+	margin-top:1px;		
+	background-color:#0066CC;
+}
+a.day_button:link,a.day_button:visited
+{
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#BAC9EB;
+}
+a.day_button_selected:link,a.day_button_selected:visited
+{
+	color:#FFFFFF;
+	background-color:#FF6666;
+}
+a.day_button:hover,a.day_button_selected:hover
+{
+	color:#FFFFFF;
+	background-color:#FF6666;
+}
+a.hour_button,a.hour_button_selected 
+{
+	font-weight:bold;
+	width:37px;
+	height:18px;
+	display:block;
+	text-align:center;
+	line-height:18px;
+	vertical-align:middle;
+	margin:0 1px 0 1px;
+	margin-top:1px;		
+	border:1px solid #99CC00;
+	background-color:#BAC9EB;
+}
+a.hour_button:link,a.hour_button:visited
+{
+	color:black;
+	background-color:#BAC9EB;
+	border:1px solid #99CC00;
+}
+a.hour_button_selected:link,a.hour_button_selected:visited
+{
+	color:black;
+	background-color:white;
+	border-top:1px solid #99CC00;
+}
+a.hour_button:hover,a.hour_button_selected:hover
+{
+	color:black;
+	background-color:white;
+	border:1px solid #99CC00;	
+}
+a.payroll_datetime_button,a.payroll_datetime_button_selected
+{
+	font-weight:bold;
+	width:50px;
+	display:block;
+	text-align:center;
+	line-height:15px;
+	vertical-align:middle;
+	margin:1px;
+}
+a.payroll_datetime_button:link,a.payroll_datetime_button:visited
+{
+	color:#000000;
+	background-color:#F7CE4A;
+	border:1px solid #CC9900;
+}
+a.payroll_datetime_button_selected:link,a.payroll_datetime_button_selected:visited
+{
+	color:black;
+	background-color:white;
+	border:1px solid #C30010;
+	margin:1px;	
+}
+a.payroll_datetime_button:hover, a.payroll_datetime_button_selected:hover
+{
+	color:black;
+	background-color:#FFFFFF;
+	border:1px solid #999999;	
+	margin-top:1px;		
+}
+.calendar_bg
+{
+	background-color:#EFEFEF;
+}

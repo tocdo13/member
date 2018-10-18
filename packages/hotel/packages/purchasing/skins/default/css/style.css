@@ -1,0 +1,26 @@
+/*------------HotelManagerReport---------------*/
+.report-title
+{
+	font-weight:bold;
+	font-size:24px;
+	text-transform:uppercase;
+}
+.report-background
+{
+	margin-top:3px;	
+}
+.warehouse-bill-bound{
+	float:left;
+	width:1000px;
+}
+.warehouse-bound{
+}
+.content{
+	padding:10px;
+}
+.report_title{
+		text-transform:uppercase;
+}
+.product-report-bound{
+	padding:5px;
+}

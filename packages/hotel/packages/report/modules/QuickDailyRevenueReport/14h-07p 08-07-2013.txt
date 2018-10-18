@@ -1,0 +1,16 @@
+﻿----------------------ROOM-----08/07/2013-----------------------
+1) Room: 106 - Recode: 45 - Status: CHECKIN - Change price: 2,700,000 - Arrival time: 11h:39 08/07/2013 - Departure time: 12h:00 09/07/2013 - Link: ?page=reservation&cmd=edit&id=45&r_r_id=61&portal=default
+2) Room: 202 - Recode: 43 - Status: CHECKIN - Change price: 3,800,000 - Arrival time: 11h:29 08/07/2013 - Departure time: 12h:00 13/07/2013 - Link: ?page=reservation&cmd=edit&id=43&r_r_id=59&portal=default
+3) Room: 105 - Recode: 44 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 11h:25 08/07/2013 - Departure time: 12h:00 09/07/2013 - Link: ?page=reservation&cmd=edit&id=44&r_r_id=58&portal=default
+
+
+----------------------GUEST----------------------------
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

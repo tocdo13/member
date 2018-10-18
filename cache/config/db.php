@@ -1,0 +1,1 @@
+<?php  define('USER_NAME','ver18fixtosilverland'); define('PASSWORD','hotel2014'); define('DB_NAME','localhost'); ?>

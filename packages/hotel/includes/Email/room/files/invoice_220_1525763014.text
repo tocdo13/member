@@ -1,0 +1,106 @@
+        <div  style="margin: 0 auto; border: 1px solid #00b2f9; padding: 5px;">
+            <table cellSpacing=0 cellPadding=0 border=0 width="100%" id="invoice">
+            	<tr>
+            		<td align="center">
+                		<table cellpadding="0" width="100%" border="0">
+                            <tr>
+                            	<td>
+                                    <br><br>
+                                </td>
+                            </tr>
+                    		<tr>
+                    			<td width="1%" align="center" valign="top"><img src="E:/wamp/www/version18/resources/interfaces/images/default/logo.jpg" width="200px;" alt="logo" /></td>
+                    		  	                                  <td align="center">
+                    				<div class="invoice-title">GUEST'S FOLIO</div>
+                    				<div class="invoice-sub-title"></div>
+                    				<div class="invoice-contact-info">Hà Nội, Việt Nam</div>
+                    				<div class="invoice-contact-info">Tel: (+84) 024.6282.7777 | Fax: </div>
+                    				<div class="invoice-contact-info">Email: info@tcv.vn | Website: www.quanlyresort.com</div>
+                    				<div></div>
+                    		  	</td>
+                                  <td width="100px;"></td>
+                    		</tr>
+                		</table><br />
+                		<table cellpadding="0" width="100%" border="0" class="genneral-info-table">
+                			<tr>
+                			  <td width="50%"><div class="item-body" style="float:left; width:100%;" style="float:left; width:100%;">Booking code: / Ref_No:</font> <font style="font-size:18px;font-weight:200">000189</font></div></td>
+                			  <td>Folio No.220/  Re_code: 234</td>
+                		  </tr>
+                		</table>
+            		<table cellpadding="0" width="100%" border="0" class="genneral-info-table">
+            			<tr>
+            				<td width="50%"><div class="item-body" style="float:left; width:100%;" style="float:left; width:100%;">Guest's name:&nbsp;LINHB</div></td>
+            				<td>Room No.801</td>
+            			</tr>
+                        
+                        <tr>
+                			  <td width="50%"><div class="item-body" style="float:left; width:100%;" style="float:left; width:100%;">Company name:ADSFS</div></td>
+                              <td></td>
+                		</tr>
+            			<tr>
+            			  <td><div class="item-body" style="float:left; width:100%;" style="float:left; width:100%;">Address:656565</div></td>
+                          <td><div class="item-body" style="float:left; width:100%;">Exchange Rate : 25,000</div></td>
+            		    </tr>
+            			<tr>
+                          <td><div class="item-body" style="float:left; width:100%;">Arrival date:03/05/2018 Departure date:04/05/2018</div></td>
+            			  <td>Print by - Print time :Đỗ thị hồng - 14:03 08/05/18</td>
+                        </tr> 
+            		</table>
+            		</td>
+            	</tr>
+            </table>      
+            
+            <div class="item-body" style="float:left; width:100%;">
+            	<div class="seperator-line" style="border-bottom:1px solid #000000;float:left;width:100%;margin-bottom:10px;">&nbsp;</div>
+            </div>
+            <div class="item-body" style="float:left; width:100%;">
+            	<div class="item-header" style="float:left;width:100%;font-weight:bold;margin-bottom:10px;">
+                	
+            		 <div class="description" style="float:left;width:45%;text-align:left;padding:2px 2px 2px 5px;">Descriptions</div>
+            	   <div class="amount" style="float:left; width:30%; text-align:right; padding:2px 0px 2px 0px;">Amount</div>
+            	</div>
+            </div>
+                       
+                        <div class="item-body" style="float:left; width:100%;">	
+                        
+                        	<div class="description" style="float:left;width:45%;text-align:left;padding:2px 2px 2px 5px;">801 Tiền phòng  03/05/2018</div>
+                        	<div class="amount" style="float:left; width:30%; text-align:right; padding:2px 0px 2px 0px;">2,100,000.00</div>
+                        </div>
+                        <div id="total_invoice">
+          <div class="item-body total-group">
+                      <div class="sub-item-body">	
+        		
+        		<div class="description" style="float:left;width:45%;text-align:left;padding:2px 2px 2px 5px; color:red; "><strong>Grand Total</strong>
+                                        </div>
+        		<div class="amount" style="float:left; width:30%; text-align:right; padding:2px 0px 2px 0px; color:red;"><strong>2,100,000.00</strong></div>
+        	</div>
+            
+                        <div align="center">
+                                    <table width="800px" style="border-collapse:collapse;" border="1" bordercolor="#CCCCCC" cellpadding="3px">
+                        <tr>
+                      		<th align="center">Loại thanh toán</th >
+                            <th align="center">Số tài khoản/Số thẻ</th >
+                            <th align="center">Diễn giải</th >
+                            <th align="center">Loại tiền</th >
+                            <th align="right">Tổng</th >
+                            <!--  
+                            <th align="right">Phí giao dịch</th >
+                            <th align="right">Thanh toán</th >
+                            -->
+                      	</tr>
+                        
+                                                  <tr>
+                      		<td align="center">Tiền mặt</td>
+                            <td align="center"></td>
+                            <td align="center"></td>
+                            <td align="center">VND</td>
+                            <td align="right">2,100,000</td>
+                            <!--  
+                            <td align="right">0</td>
+                            <td align="right">2,100,000</td>
+                            -->   
+                      	</tr>
+                                             </table>   
+                            </div> 
+            </div>
+        

@@ -1,0 +1,10 @@
+28/10/2009 : 
+	- Update loi chon khach o tai khach san thi phan mem ko cho phep ghi, bao loi la chua nhap ten Khach hang - Fix khi chon phong->Dien ten khach hang ung voi ten phong
+	- Update : ten khach hang trong hoa don
+01/12/2009 :
+	- Update : check in, check out ngay tai form
+			+ Chon loai thanh toan
+13/12/2009 :
+	- Chuyen Module : Product, ProductCategory, Unit sang packages hotel
+	- Update module : RestauratProduct,RestauratProductCategory : 
+		+ Update theo nha hang

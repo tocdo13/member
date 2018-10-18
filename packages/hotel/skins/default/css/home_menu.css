@@ -1,0 +1,55 @@
+.home-menu-wrapper{
+	float:left;
+	text-align:center;
+	width:100%;
+}
+.home-menu-wrapper div{
+	width:685px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+}
+.home-menu-wrapper table{
+	background-color:#EFEFEF;
+}
+.home-menu-wrapper div .hotel-list{
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+.home-menu-wrapper div .hotel-list{
+	margin:10px 0px 10px 0px;
+}
+.home-menu-wrapper div .hotel-list div{
+	float:left;
+	width:320px;
+	height:50px;
+	margin:5px;
+	border:1px solid #CCCCCC;
+	background-color:#FFFFFF;
+}
+
+.home-menu-wrapper div.hotel-list div a{
+	float:left;
+	width:100%;	
+	height:50px;	
+	text-indent:25px;
+	line-height:50px;
+	font-size:14px;
+	background-color:#B0D8FF;
+	border:1px solid #06C;
+	margin:5px;
+}
+.home-menu-wrapper div.hotel-list div a:hover{
+	background-color:#FF9;
+	border:1px solid #FC9;
+	text-decoration:none;
+	font-weight:bold;
+}
+.home-menu-wrapper div.hotel-list div a.selected{
+	background:url(../../../../core/skins/default/images/select.png) no-repeat 5% 50%;	
+	background-color:#FF9;
+	border:1px solid #FC9;
+	font-weight:bold;
+	color:#039;
+}

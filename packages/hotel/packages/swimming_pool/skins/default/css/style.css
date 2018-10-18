@@ -1,0 +1,71 @@
+/* CSS Document */
+.swimming_pool-daily-summary-bound{
+	padding:5px;
+}
+.swimming_pool-daily-summary-bound .title{
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.time-column{
+	width:50px;
+}
+.swimming_pool-column ul li{
+	list-style:none;
+	padding:3px;
+	border:1px solid #FFCC00;
+	background-color:#FFFFCC;
+	float:left;
+	width:80px;
+	text-align:right;
+	clear:left;
+	margin-bottom:2px;
+	height:300px;
+}
+.swimming_pool-column.item ul li{
+	position:relative;
+	padding:3px 0px 3px 0px;
+	border:1px solid #FFFFFF;
+	border-bottom:1px dotted #CCCCCC;
+	background-color:#C6E2FF;
+	float:left;
+	width:100%;
+	text-align:right;
+	clear:left;
+	margin-bottom:2px;
+}
+.time-block{
+	float:left;
+	background:#FFCCCC;
+	margin-right:1px;
+	font-size:11px;
+	padding:5px 0px 5px 0px;
+}
+.date{
+	width:83px;
+}
+.hour{
+	width:60px;
+}
+.select-item{
+	color:#FF0000;
+	font-weight:bold;
+}
+.swimming_pool-daily-summary-bound{
+	background:url(../images/swimming_pool.jpg) no-repeat right top;
+	min-height:800px;
+}
+.reservation{
+	float:left;text-align:center;font-size:10px;padding:1px 0px 1px 0px;position:absolute;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.reservation.BOOKED{
+	border:1px solid #8EC7FF;background:#CCFFFF;
+}
+.reservation.CHECKIN{
+	border:1px solid #CC3300;background:#FFFF33;
+}
+.reservation.CHECKOUT{
+	border:1px solid #FF66CC;background:#FF99CC;
+}

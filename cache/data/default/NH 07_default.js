@@ -1,0 +1,13 @@
+product_array={'':'','154':{
+                    'id':'154',
+                    'product_id':'DV02',
+                    'name':'dv02',
+                    'price':'80000',
+                    'price_id':'154',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'67',
+                    'unit':'Bánh',
+                    'unit_id':'81',
+                    'type':'SERVICE'}
+                    }

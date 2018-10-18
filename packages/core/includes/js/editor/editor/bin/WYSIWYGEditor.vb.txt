@@ -1,0 +1,1360 @@
+Imports System
+Imports System.Web
+Imports System.Web.UI
+Imports Microsoft.VisualBasic
+
+Namespace InnovaStudio
+
+    Public Class WYSIWYGEditor
+        Inherits System.Web.UI.WebControls.WebControl
+        Implements IPostBackDataHandler
+        Public Event ContentChanged As EventHandler
+
+        Public Property Content() As String
+            Get
+                Return CType(Me.ViewState("Content"), String)
+            End Get
+            Set(ByVal Value As String)
+                'Value = Replace(Value, "\", "&#92")
+                'Value = Replace(Value, "'", "&#146")
+                'Value = Replace(Value, vbCrLf, "")
+                Me.ViewState("Content") = Value
+            End Set
+        End Property
+
+        Private sScriptPath As String = "script/"
+        Public Property scriptPath() As String
+            Get
+                Return sScriptPath
+            End Get
+            Set(ByVal Value As String)
+                sScriptPath = Value
+            End Set
+        End Property
+
+        Private nDropTopAdjustment As Integer = 0
+        Public Property DropTopAdjustment() As Integer
+            Get
+                Return nDropTopAdjustment
+            End Get
+            Set(ByVal Value As Integer)
+                nDropTopAdjustment = Value
+            End Set
+        End Property
+
+        Private nDropLeftAdjustment As Integer = 0
+        Public Property DropLeftAdjustment() As Integer
+            Get
+                Return nDropLeftAdjustment
+            End Get
+            Set(ByVal Value As Integer)
+                nDropLeftAdjustment = Value
+            End Set
+        End Property
+
+        Private nDropTopAdjustment_moz As Integer = 0
+        Public Property DropTopAdjustment_moz() As Integer
+            Get
+                Return nDropTopAdjustment_moz
+            End Get
+            Set(ByVal Value As Integer)
+                nDropTopAdjustment_moz = Value
+            End Set
+        End Property
+
+        Private nDropLeftAdjustment_moz As Integer = 0
+        Public Property DropLeftAdjustment_moz() As Integer
+            Get
+                Return nDropLeftAdjustment_moz
+            End Get
+            Set(ByVal Value As Integer)
+                nDropLeftAdjustment_moz = Value
+            End Set
+        End Property
+
+        Private sStyleSelectionHoverFg As String = ""
+        Public Property styleSelectionHoverFg() As String
+            Get
+                Return sStyleSelectionHoverFg
+            End Get
+            Set(ByVal Value As String)
+                sStyleSelectionHoverFg = Value
+            End Set
+        End Property
+
+        Private sStyleSelectionHoverBg As String = ""
+        Public Property styleSelectionHoverBg() As String
+            Get
+                Return sStyleSelectionHoverBg
+            End Get
+            Set(ByVal Value As String)
+                sStyleSelectionHoverBg = Value
+            End Set
+        End Property
+
+        'Properties ~~~~~~~~~
+
+        'CUSTOM COLORS
+        Private sCustomColors As Array = New String() {}
+        Public Property CustomColors() As Array
+            Get
+                Return sCustomColors
+            End Get
+            Set(ByVal Value As Array)
+                sCustomColors = Value
+            End Set
+        End Property
+
+        'ASSET MANAGER
+        Private sAssetManager As String = ""
+        Public Property AssetManager() As String
+            Get
+                Return sAssetManager
+            End Get
+            Set(ByVal Value As String)
+                sAssetManager = Value
+            End Set
+        End Property
+        Private sAssetManagerWidth As String = ""
+        Public Property AssetManagerWidth() As String
+            Get
+                Return sAssetManagerWidth
+            End Get
+            Set(ByVal Value As String)
+                sAssetManagerWidth = Value
+            End Set
+        End Property
+        Private sAssetManagerHeight As String = ""
+        Public Property AssetManagerHeight() As String
+            Get
+                Return sAssetManagerHeight
+            End Get
+            Set(ByVal Value As String)
+                sAssetManagerHeight = Value
+            End Set
+        End Property
+
+        'INTERNAL LINK
+        Private sInternalLink As String = ""
+        Public Property InternalLink() As String
+            Get
+                Return sInternalLink
+            End Get
+            Set(ByVal Value As String)
+                sInternalLink = Value
+            End Set
+        End Property
+        Private sInternalLinkWidth As String = ""
+        Public Property InternalLinkWidth() As String
+            Get
+                Return sInternalLinkWidth
+            End Get
+            Set(ByVal Value As String)
+                sInternalLinkWidth = Value
+            End Set
+        End Property
+        Private sInternalLinkHeight As String = ""
+        Public Property InternalLinkHeight() As String
+            Get
+                Return sInternalLinkHeight
+            End Get
+            Set(ByVal Value As String)
+                sInternalLinkHeight = Value
+            End Set
+        End Property
+
+        'CONTENT BLOCK
+        Private sContentBlock As String = ""
+        Public Property ContentBlock() As String
+            Get
+                Return sContentBlock
+            End Get
+            Set(ByVal Value As String)
+                sContentBlock = Value
+            End Set
+        End Property
+        Private sContentBlockWidth As String = ""
+        Public Property ContentBlockWidth() As String
+            Get
+                Return sContentBlockWidth
+            End Get
+            Set(ByVal Value As String)
+                sContentBlockWidth = Value
+            End Set
+        End Property
+        Private sContentBlockHeight As String = ""
+        Public Property ContentBlockHeight() As String
+            Get
+                Return sContentBlockHeight
+            End Get
+            Set(ByVal Value As String)
+                sContentBlockHeight = Value
+            End Set
+        End Property
+        Private bContentBlock As Boolean = False
+
+        'CUSTOM OBJECT
+        Private sCustomObject As String = ""
+        Public Property CustomObject() As String
+            Get
+                Return sCustomObject
+            End Get
+            Set(ByVal Value As String)
+                sCustomObject = Value
+            End Set
+        End Property
+        Private sCustomObjectWidth As String = ""
+        Public Property CustomObjectWidth() As String
+            Get
+                Return sCustomObjectWidth
+            End Get
+            Set(ByVal Value As String)
+                sCustomObjectWidth = Value
+            End Set
+        End Property
+        Private sCustomObjectHeight As String = ""
+        Public Property CustomObjectHeight() As String
+            Get
+                Return sCustomObjectHeight
+            End Get
+            Set(ByVal Value As String)
+                sCustomObjectHeight = Value
+            End Set
+        End Property
+
+        'EXTERNAL CSS
+        Private sCss As String = ""
+        Public Property Css() As String
+            Get
+                Return sCss
+            End Get
+            Set(ByVal Value As String)
+                sCss = Value
+            End Set
+        End Property
+
+        'STYLE LIST
+        Private sStyleList As Array = New String(,) {}
+        Public Property StyleList() As Array
+            Get
+                Return sStyleList
+            End Get
+            Set(ByVal Value As Array)
+                sStyleList = Value
+            End Set
+        End Property
+
+        Private bBtnStyles As Boolean = False
+        Public Property btnStyles() As Boolean
+            Get
+                Return bBtnStyles
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnStyles = Value
+            End Set
+        End Property
+
+        'EDIT SETTINGS
+        Private sEditMode As String = "HTMLBody" 'HTMLBody,XHTMLBody,HTML,XHTML
+        Public Property EditMode() As String
+            Get
+                Return sEditMode
+            End Get
+            Set(ByVal Value As String)
+                sEditMode = Value
+            End Set
+        End Property
+        Private sEditorWidth As String = ""
+        Public Property EditorWidth() As String
+            Get
+                Return sEditorWidth
+            End Get
+            Set(ByVal Value As String)
+                sEditorWidth = Value
+            End Set
+        End Property
+        Private sEditorHeight As String = ""
+        Public Property EditorHeight() As String
+            Get
+                Return sEditorHeight
+            End Get
+            Set(ByVal Value As String)
+                sEditorHeight = Value
+            End Set
+        End Property
+        Private sButtonFeatures As Array = New String() {}
+        Public Property ButtonFeatures() As Array
+            Get
+                Return sButtonFeatures
+            End Get
+            Set(ByVal Value As Array)
+                sButtonFeatures = Value
+            End Set
+        End Property
+
+        'PARAGRAPH
+        Private sParagraphList As Array = New String(,) {}
+        Public Property ParagraphList() As Array
+            Get
+                Return sParagraphList
+            End Get
+            Set(ByVal Value As Array)
+                sParagraphList = Value
+            End Set
+        End Property
+        Private bBtnParagraph As Boolean = True
+        Public Property btnParagraph() As Boolean
+            Get
+                Return bBtnParagraph
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnParagraph = Value
+            End Set
+        End Property
+
+        'FONT
+        Private sFontList As Array = New String() {}
+        Public Property FontList() As Array
+            Get
+                Return sFontList
+            End Get
+            Set(ByVal Value As Array)
+                sFontList = Value
+            End Set
+        End Property
+        Private bBtnFont As Boolean = True
+        Public Property btnFont() As Boolean
+            Get
+                Return bBtnFont
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnFont = Value
+            End Set
+        End Property
+
+        'SIZE
+        Private sSizeList As Array = New String(,) {}
+        Public Property SizeList() As Array
+            Get
+                Return sSizeList
+            End Get
+            Set(ByVal Value As Array)
+                sSizeList = Value
+            End Set
+        End Property
+        Private bBtnSize As Boolean = True
+        Public Property btnSize() As Boolean
+            Get
+                Return bBtnSize
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnSize = Value
+            End Set
+        End Property
+
+        'CUSTOM TAG
+        Private sCustomTagList As Array = New String(,) {}
+        Public Property CustomTagList() As Array
+            Get
+                Return sCustomTagList
+            End Get
+            Set(ByVal Value As Array)
+                sCustomTagList = Value
+            End Set
+        End Property
+
+        'INITIAL REFRESH
+        Private bInitialRefresh As Boolean = False
+        Public Property InitialRefresh() As Boolean
+            Get
+                Return bInitialRefresh
+            End Get
+            Set(ByVal Value As Boolean)
+                bInitialRefresh = Value
+            End Set
+        End Property
+
+        'SOURCE EDITOR
+        Private bBtnHTMLSource As Boolean = False
+        Public Property btnHTMLSource() As Boolean
+            Get
+                Return bBtnHTMLSource
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnHTMLSource = Value
+            End Set
+        End Property
+
+        Private bBtnHTMLFullSource As Boolean = False
+        Public Property btnHTMLFullSource() As Boolean
+            Get
+                Return bBtnHTMLFullSource
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnHTMLFullSource = Value
+            End Set
+        End Property
+
+        'Publishing Path
+        Private sPublishingPath As String = ""
+        Public Property PublishingPath() As String
+            Get
+                Return sPublishingPath
+            End Get
+            Set(ByVal Value As String)
+                sPublishingPath = Value
+            End Set
+        End Property
+
+        'SpellCheck Mode
+        Private sSpellCheckMode As String = ""
+        Public Property spellCheckMode() As String
+            Get
+                Return sSpellCheckMode
+            End Get
+            Set(ByVal Value As String)
+                sSpellCheckMode = Value
+            End Set
+        End Property
+
+        'Custom Buttons
+        Private sCustomButtons As Array = New String(,) {}
+        Public Property CustomButtons() As Array
+            Get
+                Return sCustomButtons
+            End Get
+            Set(ByVal Value As Array)
+                sCustomButtons = Value
+            End Set
+        End Property
+
+
+        'OTHERS
+        Private bBtnSave As Boolean = False
+        Public Property btnSave() As Boolean
+            Get
+                Return bBtnSave
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnSave = Value
+            End Set
+        End Property
+
+        Private sOnSave As String = ""
+        Public Property onSave() As String
+            Get
+                Return sOnSave
+            End Get
+            Set(ByVal Value As String)
+                sOnSave = Value
+            End Set
+        End Property
+
+        Private bBtnPreview As Boolean = True
+        Public Property btnPreview() As Boolean
+            Get
+                Return bBtnPreview
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnPreview = Value
+            End Set
+        End Property
+
+        Private bBtnFullScreen As Boolean = True
+        Public Property btnFullScreen() As Boolean
+            Get
+                Return bBtnFullScreen
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnFullScreen = Value
+            End Set
+        End Property
+
+        Private sOnFullScreen As String = ""
+        Public Property onFullScreen() As String
+            Get
+                Return sOnFullScreen
+            End Get
+            Set(ByVal Value As String)
+                sOnFullScreen = Value
+            End Set
+        End Property
+
+        Private sOnNormalScreen As String = ""
+        Public Property onNormalScreen() As String
+            Get
+                Return sOnNormalScreen
+            End Get
+            Set(ByVal Value As String)
+                sOnNormalScreen = Value
+            End Set
+        End Property
+
+
+        Private bBtnSearch As Boolean = True
+        Public Property btnSearch() As Boolean
+            Get
+                Return bBtnSearch
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnSearch = Value
+            End Set
+        End Property
+
+        Private bBtnTextFormatting As Boolean = True
+        Public Property btnTextFormatting() As Boolean
+            Get
+                Return bBtnTextFormatting
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnTextFormatting = Value
+            End Set
+        End Property
+
+        Private bBtnParagraphFormatting As Boolean = True
+        Public Property btnParagraphFormatting() As Boolean
+            Get
+                Return bBtnParagraphFormatting
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnParagraphFormatting = Value
+            End Set
+        End Property
+
+        Private bBtnListFormatting As Boolean = True
+        Public Property btnListFormatting() As Boolean
+            Get
+                Return bBtnListFormatting
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnListFormatting = Value
+            End Set
+        End Property
+
+        Private bBtnBoxFormatting As Boolean = True
+        Public Property btnBoxFormatting() As Boolean
+            Get
+                Return bBtnBoxFormatting
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnBoxFormatting = Value
+            End Set
+        End Property
+
+        Private bBtnCssText As Boolean = True
+        Public Property btnCssText() As Boolean
+            Get
+                Return bBtnCssText
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnCssText = Value
+            End Set
+        End Property
+
+        Private bBtnCut As Boolean = True
+        Public Property btnCut() As Boolean
+            Get
+                Return bBtnCut
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnCut = Value
+            End Set
+        End Property
+
+        Private bBtnCopy As Boolean = True
+        Public Property btnCopy() As Boolean
+            Get
+                Return bBtnCopy
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnCopy = Value
+            End Set
+        End Property
+
+        Private bBtnPaste As Boolean = True
+        Public Property btnPaste() As Boolean
+            Get
+                Return bBtnPaste
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnPaste = Value
+            End Set
+        End Property
+
+        Private bBtnUndo As Boolean = True
+        Public Property btnUndo() As Boolean
+            Get
+                Return bBtnUndo
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnUndo = Value
+            End Set
+        End Property
+
+        Private bBtnRedo As Boolean = True
+        Public Property btnRedo() As Boolean
+            Get
+                Return bBtnRedo
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnRedo = Value
+            End Set
+        End Property
+
+        Private bBtnBold As Boolean = True
+        Public Property btnBold() As Boolean
+            Get
+                Return bBtnBold
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnBold = Value
+            End Set
+        End Property
+
+        Private bBtnItalic As Boolean = True
+        Public Property btnItalic() As Boolean
+            Get
+                Return bBtnItalic
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnItalic = Value
+            End Set
+        End Property
+
+        Private bBtnUnderline As Boolean = True
+        Public Property btnUnderline() As Boolean
+            Get
+                Return bBtnUnderline
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnUnderline = Value
+            End Set
+        End Property
+
+        Private bBtnJustifyLeft As Boolean = True
+        Public Property btnJustifyLeft() As Boolean
+            Get
+                Return bBtnJustifyLeft
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnJustifyLeft = Value
+            End Set
+        End Property
+
+        Private bBtnJustifyCenter As Boolean = True
+        Public Property btnJustifyCenter() As Boolean
+            Get
+                Return bBtnJustifyCenter
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnJustifyCenter = Value
+            End Set
+        End Property
+
+        Private bBtnJustifyRight As Boolean = True
+        Public Property btnJustifyRight() As Boolean
+            Get
+                Return bBtnJustifyRight
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnJustifyRight = Value
+            End Set
+        End Property
+
+        Private bBtnJustifyFull As Boolean = True
+        Public Property btnJustifyFull() As Boolean
+            Get
+                Return bBtnJustifyFull
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnJustifyFull = Value
+            End Set
+        End Property
+
+        Private bBtnNumbering As Boolean = True
+        Public Property btnNumbering() As Boolean
+            Get
+                Return bBtnNumbering
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnNumbering = Value
+            End Set
+        End Property
+
+        Private bBtnBullets As Boolean = True
+        Public Property btnBullets() As Boolean
+            Get
+                Return bBtnBullets
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnBullets = Value
+            End Set
+        End Property
+
+        Private bBtnIndent As Boolean = True
+        Public Property btnIndent() As Boolean
+            Get
+                Return bBtnIndent
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnIndent = Value
+            End Set
+        End Property
+
+        Private bBtnOutdent As Boolean = True
+        Public Property btnOutdent() As Boolean
+            Get
+                Return bBtnOutdent
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnOutdent = Value
+            End Set
+        End Property
+
+        Private bBtnForeColor As Boolean = True
+        Public Property btnForeColor() As Boolean
+            Get
+                Return bBtnForeColor
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnForeColor = Value
+            End Set
+        End Property
+
+        Private bBtnBackColor As Boolean = True
+        Public Property btnBackColor() As Boolean
+            Get
+                Return bBtnBackColor
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnBackColor = Value
+            End Set
+        End Property
+
+        Private bBtnHyperlink As Boolean = True
+        Public Property btnHyperlink() As Boolean
+            Get
+                Return bBtnHyperlink
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnHyperlink = Value
+            End Set
+        End Property
+
+        Private bBtnBookmark As Boolean = True
+        Public Property btnBookmark() As Boolean
+            Get
+                Return bBtnBookmark
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnBookmark = Value
+            End Set
+        End Property
+
+        Private bBtnCharacters As Boolean = True
+        Public Property btnCharacters() As Boolean
+            Get
+                Return bBtnCharacters
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnCharacters = Value
+            End Set
+        End Property
+
+        Private bBtnImage As Boolean = True
+        Public Property btnImage() As Boolean
+            Get
+                Return bBtnImage
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnImage = Value
+            End Set
+        End Property
+
+        Private bBtnFlash As Boolean = False
+        Public Property btnFlash() As Boolean
+            Get
+                Return bBtnFlash
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnFlash = Value
+            End Set
+        End Property
+
+        Private bBtnMedia As Boolean = False
+        Public Property btnMedia() As Boolean
+            Get
+                Return bBtnMedia
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnMedia = Value
+            End Set
+        End Property
+
+        Private bBtnTable As Boolean = True
+        Public Property btnTable() As Boolean
+            Get
+                Return bBtnTable
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnTable = Value
+            End Set
+        End Property
+
+        Private bBtnGuidelines As Boolean = True
+        Public Property btnGuidelines() As Boolean
+            Get
+                Return bBtnGuidelines
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnGuidelines = Value
+            End Set
+        End Property
+
+        Private bBtnAbsolute As Boolean = True
+        Public Property btnAbsolute() As Boolean
+            Get
+                Return bBtnAbsolute
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnAbsolute = Value
+            End Set
+        End Property
+
+        Private bBtnPasteWord As Boolean = True
+        Public Property btnPasteWord() As Boolean
+            Get
+                Return bBtnPasteWord
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnPasteWord = Value
+            End Set
+        End Property
+
+        Private bBtnLine As Boolean = True
+        Public Property btnLine() As Boolean
+            Get
+                Return bBtnLine
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnLine = Value
+            End Set
+        End Property
+
+        Private bBtnForm As Boolean = True
+        Public Property btnForm() As Boolean
+            Get
+                Return bBtnForm
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnForm = Value
+            End Set
+        End Property
+
+        Private bBtnRemoveFormat As Boolean = True
+        Public Property btnRemoveFormat() As Boolean
+            Get
+                Return bBtnRemoveFormat
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnRemoveFormat = Value
+            End Set
+        End Property
+
+        Private bUseTagSelector As Boolean = True
+        Public Property UseTagSelector() As Boolean
+            Get
+                Return bUseTagSelector
+            End Get
+            Set(ByVal Value As Boolean)
+                bUseTagSelector = Value
+            End Set
+        End Property
+
+        Private sTagSelectorPosition As String = "bottom"
+        Public Property TagSelectorPosition() As String
+            Get
+                Return sTagSelectorPosition
+            End Get
+            Set(ByVal Value As String)
+                sTagSelectorPosition = Value
+            End Set
+        End Property
+
+        Private bBtnPasteText As Boolean = False
+        Public Property btnPasteText() As Boolean
+            Get
+                Return bBtnPasteText
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnPasteText = Value
+            End Set
+        End Property
+
+        Private bBtnStrikethrough As Boolean = False
+        Public Property btnStrikethrough() As Boolean
+            Get
+                Return bBtnStrikethrough
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnStrikethrough = Value
+            End Set
+        End Property
+
+        Private bBtnSuperscript As Boolean = False
+        Public Property btnSuperscript() As Boolean
+            Get
+                Return bBtnSuperscript
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnSuperscript = Value
+            End Set
+        End Property
+
+        Private bBtnSubscript As Boolean = False
+        Public Property btnSubscript() As Boolean
+            Get
+                Return bBtnSubscript
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnSubscript = Value
+            End Set
+        End Property
+
+        Private bBtnLTR As Boolean = False
+        Public Property btnLTR() As Boolean
+            Get
+                Return bBtnLTR
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnLTR = Value
+            End Set
+        End Property
+
+        Private bBtnRTL As Boolean = False
+        Public Property btnRTL() As Boolean
+            Get
+                Return bBtnRTL
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnRTL = Value
+            End Set
+        End Property
+
+        Private bBtnClearAll As Boolean = False
+        Public Property btnClearAll() As Boolean
+            Get
+                Return bBtnClearAll
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnClearAll = Value
+            End Set
+        End Property
+
+        Private bBtnSpellCheck As Boolean = False
+        Public Property btnSpellCheck() As Boolean
+            Get
+                Return bBtnSpellCheck
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnSpellCheck = Value
+            End Set
+        End Property
+
+        Private bBtnPrint As Boolean = False
+        Public Property btnPrint() As Boolean
+            Get
+                Return bBtnPrint
+            End Get
+            Set(ByVal Value As Boolean)
+                bBtnPrint = Value
+            End Set
+        End Property
+
+        Private bUseDIV As Boolean = True
+        Public Property UseDIV() As Boolean
+            Get
+                Return bUseDIV
+            End Get
+            Set(ByVal Value As Boolean)
+                bUseDIV = Value
+            End Set
+        End Property
+
+        Private bUseBR As Boolean = False
+        Public Property UseBR() As Boolean
+            Get
+                Return bUseBR
+            End Get
+            Set(ByVal Value As Boolean)
+                bUseBR = Value
+            End Set
+        End Property
+
+        Private bPreserveSpace As Boolean = False
+        Public Property PreserveSpace() As Boolean
+            Get
+                Return bPreserveSpace
+            End Get
+            Set(ByVal Value As Boolean)
+                bPreserveSpace = Value
+            End Set
+        End Property
+
+        'LANGUAGE SETTINGS
+        Private sLanguage As String = "english" 'english, danish, dutch, french, german, ...
+        Public Property Language() As String
+            Get
+                Return sLanguage
+            End Get
+            Set(ByVal Value As String)
+                sLanguage = Value
+            End Set
+        End Property
+
+        'ADD-ONS
+        Private bUseCSSBuilder As Boolean = False
+        Public Property UseCSSBuilder() As Boolean
+            Get
+                Return bUseCSSBuilder
+            End Get
+            Set(ByVal Value As Boolean)
+                bUseCSSBuilder = Value
+            End Set
+        End Property
+
+        '~~~~~~~~~~~~~~~~~~~~
+
+        Private Function htmlTop() As String
+            Dim sHTML As String
+
+            sHTML = "<script language=""JavaScript"" src=""" & Me.scriptPath & "language/" & Me.Language & "/editor_lang.js""></script>"
+
+            If InStr(HttpContext.Current.Request.Browser.Type, "IE") Then
+                sHTML += "<script language=""JavaScript"" src=""" & Me.scriptPath & "editor.js""></script>"
+            Else
+                sHTML += "<script language=""JavaScript"" src=""" & Me.scriptPath & "moz/editor.js""></script>"
+            End If
+            sHTML += "<script language=""JavaScript"">" & vbCrLf
+            sHTML += "//<![CDATA[" & vbCrLf
+            sHTML += "function finish_wysiwyg_editing()"
+            sHTML += "  {"
+            sHTML += "  for(var i=0;i<oUtil.arrEditor.length;i++)"
+            sHTML += "	    {"
+
+            If Me.ClientID <> Me.UniqueID Then
+                'in ascx
+                If Me.EditMode = "HTMLBody" Then
+                    'document.getElementById("mycontrol:oEdit1").value=..
+                    sHTML += "document.getElementById(document.getElementById(oUtil.arrEditor[i].substring(2)).value).value=eval(oUtil.arrEditor[i]).getHTMLBody();"
+                ElseIf Me.EditMode = "XHTMLBody" Then
+                    sHTML += "document.getElementById(document.getElementById(oUtil.arrEditor[i].substring(2)).value).value=eval(oUtil.arrEditor[i]).getXHTMLBody();"
+                ElseIf Me.EditMode = "HTML" Then
+                    sHTML += "document.getElementById(document.getElementById(oUtil.arrEditor[i].substring(2)).value).value=eval(oUtil.arrEditor[i]).getHTML();"
+                ElseIf Me.EditMode = "XHTML" Then
+                    sHTML += "document.getElementById(document.getElementById(oUtil.arrEditor[i].substring(2)).value).value=eval(oUtil.arrEditor[i]).getXHTML();"
+                End If
+            Else
+                'in aspx
+                If Me.EditMode = "HTMLBody" Then
+                    sHTML += "document.getElementById(oUtil.arrEditor[i].substring(2)).value=eval(oUtil.arrEditor[i]).getHTMLBody();"
+                ElseIf Me.EditMode = "XHTMLBody" Then
+                    sHTML += "document.getElementById(oUtil.arrEditor[i].substring(2)).value=eval(oUtil.arrEditor[i]).getXHTMLBody();"
+                ElseIf Me.EditMode = "HTML" Then
+                    sHTML += "document.getElementById(oUtil.arrEditor[i].substring(2)).value=eval(oUtil.arrEditor[i]).getHTML();"
+                ElseIf Me.EditMode = "XHTML" Then
+                    sHTML += "document.getElementById(oUtil.arrEditor[i].substring(2)).value=eval(oUtil.arrEditor[i]).getXHTML();"
+                End If
+            End If
+
+            sHTML += "      }"
+            sHTML += "  }"
+            sHTML += vbCrLf & "//]]>" & vbCrLf
+            sHTML += "</script>" & vbCrLf
+            Return sHTML
+        End Function
+
+        Private Function htmlEditor() As String
+
+            Dim sItem As String
+            Dim sItems As String
+            Dim i As Integer
+            Dim sHTML As String
+
+            sHTML = "<pre id=""idTemp" & Me.ClientID & """ style=""display:none"">" & HttpUtility.HtmlEncode(Me.Content) & "</pre>" & vbCrLf
+            sHTML += "<script language=""JavaScript"">" & vbCrLf
+            sHTML += "//<![CDATA[" & vbCrLf
+            sHTML += "var ID" & Me.ClientID & " = new InnovaEditor('ID" & Me.ClientID & "');"
+
+            'Configuration ~~~~~~
+            If Not Me.EditorWidth = "" Then sHTML += "ID" & Me.ClientID & ".width='" & Me.EditorWidth & "';"
+            If Not Me.EditorHeight = "" Then sHTML += "ID" & Me.ClientID & ".height='" & Me.EditorHeight & "';"
+
+            If Me.EditMode = "HTMLBody" Then
+                sHTML += "ID" & Me.ClientID & ".mode='HTMLBody';"
+            ElseIf Me.EditMode = "XHTMLBody" Then
+                sHTML += "ID" & Me.ClientID & ".mode='XHTMLBody';"
+            ElseIf Me.EditMode = "HTML" Then
+                sHTML += "ID" & Me.ClientID & ".mode='HTML';"
+            ElseIf Me.EditMode = "XHTML" Then
+                sHTML += "ID" & Me.ClientID & ".mode='XHTML';"
+            End If
+
+            If Not Me.DropTopAdjustment = 0 Then
+                sHTML += "ID" & Me.ClientID & ".dropTopAdjustment=" & Me.DropTopAdjustment & ";"
+            End If
+
+            If Not Me.DropLeftAdjustment = 0 Then
+                sHTML += "ID" & Me.ClientID & ".dropLeftAdjustment=" & Me.DropLeftAdjustment & ";"
+            End If
+
+            If Not Me.DropTopAdjustment_moz = 0 Then
+                sHTML += "ID" & Me.ClientID & ".dropTopAdjustment_moz=" & Me.DropTopAdjustment_moz & ";"
+            End If
+
+            If Not Me.DropLeftAdjustment_moz = 0 Then
+                sHTML += "ID" & Me.ClientID & ".dropLeftAdjustment_moz=" & Me.DropLeftAdjustment_moz & ";"
+            End If
+
+            If Me.InitialRefresh Then sHTML += "ID" & Me.ClientID & ".initialRefresh=true;"
+            If Not Me.PublishingPath = "" Then sHTML += "ID" & Me.ClientID & ".publishingPath=""" & Me.PublishingPath & """;"
+
+            'Asset Manager ~~~~~~
+            If Not Me.AssetManager = "" Then
+                sHTML += "ID" & Me.ClientID & ".cmdAssetManager=""modalDialogShow('" & Me.AssetManager & "'," & Me.AssetManagerWidth & "," & Me.AssetManagerHeight & ")"";"
+            End If
+
+            'Internal Link ~~~~~~
+            If Not Me.InternalLink = "" Then
+                sHTML += "ID" & Me.ClientID & ".cmdInternalLink=""modalDialogShow('" & Me.InternalLink & "'," & Me.InternalLinkWidth & "," & Me.InternalLinkHeight & ")"";"
+            End If
+
+            'Content Block ~~~~~~
+            If Not Me.ContentBlock = "" Then
+                sHTML += "ID" & Me.ClientID & ".cmdContentBlock=""modalDialogShow('" & Me.ContentBlock & "'," & Me.ContentBlockWidth & "," & Me.ContentBlockHeight & ")"";"
+            End If
+
+            'Custom Object ~~~~~~
+            If Not Me.CustomObject = "" Then
+                sHTML += "ID" & Me.ClientID & ".cmdCustomObject=""modalDialogShow('" & Me.CustomObject & "'," & Me.CustomObjectWidth & "," & Me.CustomObjectHeight & ")"";"
+            End If
+
+            'Custom Tags ~~~~~~
+            sItems = ""
+            If Not Me.CustomTagList.Length = 0 Then
+                For i = 0 To Me.CustomTagList.Length / 2 - 1
+                    sItems += ",[""" & Me.CustomTagList(i, 0) & """,""" & Me.CustomTagList(i, 1) & """]"
+                Next
+                sHTML += "ID" & Me.ClientID & ".arrCustomTag=[" & Mid(sItems, 2) & "];"
+            End If
+
+            'Stylesheet ~~~~~~
+            If Not Me.Css = "" Then sHTML += "ID" & Me.ClientID & ".css='" & sCss & "';"
+
+            sItems = ""
+            If Not Me.StyleList.Length = 0 Then
+                For i = 0 To Me.StyleList.Length / 4 - 1
+                    sItems += ",[""" & Me.StyleList(i, 0) & """," & LCase(Me.StyleList(i, 1)) & ",""" & Me.StyleList(i, 2) & """,""" & Me.StyleList(i, 3) & """]"
+                Next
+                sHTML += "ID" & Me.ClientID & ".arrStyle=[" & Mid(sItems, 2) & "];"
+            End If
+
+            'Dropdown formatting
+            sItems = ""
+            If Not Me.ParagraphList.Length = 0 Then
+                For i = 0 To Me.ParagraphList.Length / 2 - 1
+                    sItems += ",[" & Me.ParagraphList(i, 0) & ",""" & Me.ParagraphList(i, 1) & """]"
+                Next
+                sHTML += "ID" & Me.ClientID & ".arrParagraph=[" & Mid(sItems, 2) & "];"
+            End If
+
+            sItems = ""
+            If Not Me.FontList.Length = 0 Then
+                For Each sItem In Me.FontList
+                    sItems += ",""" & sItem & """"
+                Next
+                sHTML += "ID" & Me.ClientID & ".arrFontName=[" & Mid(sItems, 2) & "];"
+            End If
+
+            sItems = ""
+            If Not Me.SizeList.Length = 0 Then
+                For i = 0 To Me.SizeList.Length / 2 - 1
+                    sItems += ",[" & Me.SizeList(i, 0) & ",""" & Me.SizeList(i, 1) & """]"
+                Next
+                sHTML += "ID" & Me.ClientID & ".arrFontSize=[" & Mid(sItems, 2) & "];"
+            End If
+
+            'Button Configuration ~~~~~~
+            sItems = ""
+            If Not Me.ButtonFeatures.Length = 0 Then
+                For Each sItem In Me.ButtonFeatures
+                    sItems += ",""" & sItem & """"
+                Next
+                sHTML += "ID" & Me.ClientID & ".features=[" & Mid(sItems, 2) & "];"
+            End If
+
+            'Custom Buttons ~~~~~~
+            sItems = ""
+            If Not Me.CustomButtons.Length = 0 Then
+                For i = 0 To Me.CustomButtons.Length / 4 - 1
+                    sItems += ",[""" & Me.CustomButtons(i, 0) & """,""" & Me.CustomButtons(i, 1) & """,""" & Me.CustomButtons(i, 2) & """,""" & Me.CustomButtons(i, 3) & """]"
+                Next
+                sHTML += "ID" & Me.ClientID & ".arrCustomButtons=[" & Mid(sItems, 2) & "];"
+            End If
+
+            'Optional Save Button ~~~~~~
+            If Not Me.onSave = "" Then
+                sHTML += "ID" & Me.ClientID & ".btnSave=true;"
+                sHTML += "ID" & Me.ClientID & ".onSave=new Function(""" & Me.onSave & """);"
+            End If
+
+            If Not Me.onFullScreen = "" Then
+                sHTML += "ID" & Me.ClientID & ".onFullScreen=new Function(""" & Me.onFullScreen & """);"
+            End If
+
+            If Not Me.onNormalScreen = "" Then
+                sHTML += "ID" & Me.ClientID & ".onNormalScreen=new Function(""" & Me.onNormalScreen & """);"
+            End If
+
+            If Not Me.styleSelectionHoverFg = "" Then
+                sHTML += "ID" & Me.ClientID & ".styleSelectionHoverFg=""" & Me.styleSelectionHoverFg & """;"
+            End If
+            If Not Me.styleSelectionHoverBg = "" Then
+                sHTML += "ID" & Me.ClientID & ".styleSelectionHoverBg=""" & Me.styleSelectionHoverBg & """;"
+            End If
+
+            'Others
+            If Not Me.btnParagraph Then sHTML += "ID" & Me.ClientID & ".btnParagraph=false;"
+            If Not Me.btnFont Then sHTML += "ID" & Me.ClientID & ".btnFontName=false;"
+            If Not Me.btnSize Then sHTML += "ID" & Me.ClientID & ".btnFontSize=false;"
+            If Not Me.btnPreview Then sHTML += "ID" & Me.ClientID & ".btnPreview=false;"
+            If Not Me.btnFullScreen Then sHTML += "ID" & Me.ClientID & ".btnFullScreen=false;"
+            If Not Me.btnSearch Then sHTML += "ID" & Me.ClientID & ".btnSearch=false;"
+            If Not Me.btnTextFormatting Then sHTML += "ID" & Me.ClientID & ".btnTextFormatting=false;"
+            If Not Me.btnParagraphFormatting Then sHTML += "ID" & Me.ClientID & ".btnParagraphFormatting=false;"
+            If Not Me.btnListFormatting Then sHTML += "ID" & Me.ClientID & ".btnListFormatting=false;"
+            If Not Me.btnBoxFormatting Then sHTML += "ID" & Me.ClientID & ".btnBoxFormatting=false;"
+            If Not Me.btnCssText Then sHTML += "ID" & Me.ClientID & ".btnCssText=false;"
+            If Not Me.btnCut Then sHTML += "ID" & Me.ClientID & ".btnCut=false;"
+            If Not Me.btnCopy Then sHTML += "ID" & Me.ClientID & ".btnCopy=false;"
+            If Not Me.btnPaste Then sHTML += "ID" & Me.ClientID & ".btnPaste=false;"
+            If Not Me.btnUndo Then sHTML += "ID" & Me.ClientID & ".btnUndo=false;"
+            If Not Me.btnRedo Then sHTML += "ID" & Me.ClientID & ".btnRedo=false;"
+            If Not Me.btnBold Then sHTML += "ID" & Me.ClientID & ".btnBold=false;"
+            If Not Me.btnItalic Then sHTML += "ID" & Me.ClientID & ".btnItalic=false;"
+            If Not Me.btnUnderline Then sHTML += "ID" & Me.ClientID & ".btnUnderline=false;"
+            If Not Me.btnJustifyLeft Then sHTML += "ID" & Me.ClientID & ".btnJustifyLeft=false;"
+            If Not Me.btnJustifyCenter Then sHTML += "ID" & Me.ClientID & ".btnJustifyCenter=false;"
+            If Not Me.btnJustifyRight Then sHTML += "ID" & Me.ClientID & ".btnJustifyRight=false;"
+            If Not Me.btnJustifyFull Then sHTML += "ID" & Me.ClientID & ".btnJustifyFull=false;"
+            If Not Me.btnNumbering Then sHTML += "ID" & Me.ClientID & ".btnNumbering=false;"
+            If Not Me.btnBullets Then sHTML += "ID" & Me.ClientID & ".btnBullets=false;"
+            If Not Me.btnIndent Then sHTML += "ID" & Me.ClientID & ".btnIndent=false;"
+            If Not Me.btnOutdent Then sHTML += "ID" & Me.ClientID & ".btnOutdent=false;"
+            If Not Me.btnForeColor Then sHTML += "ID" & Me.ClientID & ".btnForeColor=false;"
+            If Not Me.btnBackColor Then sHTML += "ID" & Me.ClientID & ".btnBackColor=false;"
+            If Not Me.btnHyperlink Then sHTML += "ID" & Me.ClientID & ".btnHyperlink=false;"
+            If Not Me.btnBookmark Then sHTML += "ID" & Me.ClientID & ".btnBookmark=false;"
+            If Not Me.btnCharacters Then sHTML += "ID" & Me.ClientID & ".btnCharacters=false;"
+            If Not Me.btnImage Then sHTML += "ID" & Me.ClientID & ".btnImage=false;"
+            If Not Me.btnTable Then sHTML += "ID" & Me.ClientID & ".btnTable=false;"
+            If Not Me.btnGuidelines Then sHTML += "ID" & Me.ClientID & ".btnGuidelines=false;"
+            If Not Me.btnAbsolute Then sHTML += "ID" & Me.ClientID & ".btnAbsolute=false;"
+            If Not Me.btnPasteWord Then sHTML += "ID" & Me.ClientID & ".btnPasteWord=false;"
+            If Not Me.btnLine Then sHTML += "ID" & Me.ClientID & ".btnLine=false;"
+            If Not Me.btnForm Then sHTML += "ID" & Me.ClientID & ".btnForm=false;"
+            If Not Me.btnRemoveFormat Then sHTML += "ID" & Me.ClientID & ".btnRemoveFormat=false;"
+
+            If Me.btnStyles Then sHTML += "ID" & Me.ClientID & ".btnStyles=true;"
+            If Me.btnPasteText Then sHTML += "ID" & Me.ClientID & ".btnPasteText=true;"
+            If Me.btnStrikethrough Then sHTML += "ID" & Me.ClientID & ".btnStrikethrough=true;"
+            If Me.btnSuperscript Then sHTML += "ID" & Me.ClientID & ".btnSuperscript=true;"
+            If Me.btnSubscript Then sHTML += "ID" & Me.ClientID & ".btnSubscript=true;"
+            If Me.btnLTR Then sHTML += "ID" & Me.ClientID & ".btnLTR=true;"
+            If Me.btnRTL Then sHTML += "ID" & Me.ClientID & ".btnRTL=true;"
+            If Me.btnFlash Then sHTML += "ID" & Me.ClientID & ".btnFlash=true;"
+            If Me.btnMedia Then sHTML += "ID" & Me.ClientID & ".btnMedia=true;"
+            If Me.btnClearAll Then sHTML += "ID" & Me.ClientID & ".btnClearAll=true;"
+            If Me.btnSpellCheck Then sHTML += "ID" & Me.ClientID & ".btnSpellCheck=true;"
+            If Me.btnPrint Then sHTML += "ID" & Me.ClientID & ".btnPrint=true;"
+
+            If Me.btnHTMLSource Then sHTML += "ID" & Me.ClientID & ".btnHTMLSource=true;"
+            If Me.btnHTMLFullSource Then sHTML += "ID" & Me.ClientID & ".btnHTMLFullSource=true;"
+
+            If Not Me.UseTagSelector Then
+                sHTML += "ID" & Me.ClientID & ".useTagSelector=false;"
+            Else
+                If Me.TagSelectorPosition = "top" Then
+                    sHTML += "ID" & Me.ClientID & ".TagSelectorPosition=""top"";"
+                End If
+            End If
+
+            If Not Me.UseDIV Then sHTML += "ID" & Me.ClientID & ".useDIV=false;"
+            If Me.UseBR Then sHTML += "ID" & Me.ClientID & ".useBR=true;"
+            If Me.PreserveSpace Then sHTML += "ID" & Me.ClientID & ".preserveSpace=true;"
+
+            sItems = ""
+            If Not Me.CustomColors.Length = 0 Then
+                For Each sItem In Me.CustomColors
+                    sItems += ",""" & sItem & """"
+                Next
+                sHTML += "ID" & Me.ClientID & ".customColors=[" & Mid(sItems, 2) & "];"
+            End If
+
+            If Me.UseCSSBuilder Then sHTML += "ID" & Me.ClientID & ".addonCSSBuilder(true);"
+
+            If Not Me.spellCheckMode = "" Then
+                sHTML += "ID" & Me.ClientID & ".spellCheckMode=""" & Me.spellCheckMode & """;"
+            End If
+            '~~~~~~~~~~~~~~~~~~~~
+
+            sHTML += "ID" & Me.ClientID & ".RENDER(document.getElementById('idTemp" & Me.ClientID & "').innerHTML);"
+
+            sHTML += vbCrLf & "//]]>" & vbCrLf
+            sHTML += "</script>" & vbCrLf
+
+            '*** Content (ClientID <=> UniqueID) ***
+            If Me.ClientID <> Me.UniqueID Then
+                sHTML += "<Input type=""hidden"" name=""" & Me.ClientID & """ id=""" & Me.ClientID & """ value=""" & Me.UniqueID & """>" & vbCrLf
+            End If
+            '*** /Content ***
+
+            Return sHTML
+        End Function
+
+        Protected Overrides Sub OnPreRender(ByVal e As System.EventArgs)
+            Page.RegisterClientScriptBlock("clientTop", Me.htmlTop())
+            Page.RegisterOnSubmitStatement("clientSubmit", "finish_wysiwyg_editing();")
+        End Sub
+
+        Protected Overrides Sub Render(ByVal writer As System.Web.UI.HtmlTextWriter)
+            '*** hidden field ***
+            writer.AddAttribute(HtmlTextWriterAttribute.Type, "hidden")
+            writer.AddAttribute(HtmlTextWriterAttribute.Name, Me.UniqueID)
+            writer.AddAttribute(HtmlTextWriterAttribute.Id, Me.UniqueID)
+            writer.RenderBeginTag(HtmlTextWriterTag.Input)
+            writer.RenderEndTag()
+
+            writer.Write(Me.htmlEditor)
+        End Sub
+
+        Public Function LoadPostData(ByVal postDataKey As String, ByVal postCollection As System.Collections.Specialized.NameValueCollection) As Boolean Implements System.Web.UI.IPostBackDataHandler.LoadPostData
+            Dim contentOriginal As String = Content
+            Dim contentUpdate As String = postCollection(postDataKey)
+            If contentOriginal Is Nothing Or Not contentUpdate.Equals(contentOriginal) Then
+                Content = contentUpdate
+                Return True
+            End If
+            Return False
+        End Function
+
+        Public Sub RaisePostDataChangedEvent() Implements System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent
+            OnContentChanged(EventArgs.Empty)
+        End Sub
+
+        Protected Overridable Sub OnContentChanged(ByVal e As EventArgs)
+            RaiseEvent ContentChanged(Me, e)
+        End Sub
+    End Class
+
+End Namespace

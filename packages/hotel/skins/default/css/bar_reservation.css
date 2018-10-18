@@ -1,0 +1,9 @@
+/* CSS Document */
+#reservation_bound{
+	margin:auto;
+	border:1px solid blue;
+	position:absolute;	
+}
+.simple-layout-content{
+	min-height:600px;		
+}

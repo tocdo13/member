@@ -1,0 +1,111 @@
+product_array={'':'','2278':{
+        'id':'2278',
+        'product_id':'CA',
+        'name':'cá biển',
+        'price':'150000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'18',
+        'unit':'Con',
+        'unit_id':'107',
+        'type':'PRODUCT'}
+        ,'2279':{
+        'id':'2279',
+        'product_id':'CC',
+        'name':'CA CAO',
+        'price':'30000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'57',
+        'unit':'Cốc',
+        'unit_id':'103',
+        'type':'PRODUCT'}
+        ,'2280':{
+        'id':'2280',
+        'product_id':'CC01',
+        'name':'canh cua',
+        'price':'25000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'15',
+        'unit':'Bát',
+        'unit_id':'89',
+        'type':'PRODUCT'}
+        ,'2281':{
+        'id':'2281',
+        'product_id':'CD1',
+        'name':'NƯỚC NHO MỸ',
+        'price':'50000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'146',
+        'unit':'Cốc',
+        'unit_id':'103',
+        'type':'PRODUCT'}
+        ,'2286':{
+        'id':'2286',
+        'product_id':'BB',
+        'name':'Bánh kem',
+        'price':'1500000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'113',
+        'unit':'Bàn ',
+        'unit_id':'161',
+        'type':'GOODS'}
+        ,'2299':{
+        'id':'2299',
+        'product_id':'TK1',
+        'name':'Trà khô 2',
+        'price':'10000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'53',
+        'unit':'Kg',
+        'unit_id':'85',
+        'type':'MATERIAL'}
+        ,'2300':{
+        'id':'2300',
+        'product_id':'T11',
+        'name':'TRÀ ĐÁ',
+        'price':'50000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'29',
+        'unit':'Cốc',
+        'unit_id':'103',
+        'type':'PRODUCT'}
+        ,'2302':{
+        'id':'2302',
+        'product_id':'CA1',
+        'name':'capucino sữa',
+        'price':'35000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'147',
+        'unit':'Cốc',
+        'unit_id':'103',
+        'type':'GOODS'}
+        ,'2303':{
+        'id':'2303',
+        'product_id':'ST',
+        'name':'SINH Tố hoa quả',
+        'price':'60000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'32',
+        'unit':'Ly',
+        'unit_id':'83',
+        'type':'PRODUCT'}
+        ,'2304':{
+        'id':'2304',
+        'product_id':'BV',
+        'name':'bia việt hà',
+        'price':'20000',
+        'start_date':'0',
+        'end_date':'0',
+        'category_id':'22',
+        'unit':'Chai',
+        'unit_id':'104',
+        'type':'GOODS'}
+        }

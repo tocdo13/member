@@ -1,0 +1,20 @@
+﻿----------------------ROOM-----29/06/2013-----------------------
+1) Room: 105 - Recode: 92 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 11h:46 29/06/2013 - Departure time: 12h:00 29/07/2013 - Link: ?page=reservation&cmd=edit&id=92&r_r_id=192&portal=default
+2) Room: 101 - Recode: 90 - Status: CHECKIN - Change price: 3,020,000 - Arrival time: 11h:05 29/06/2013 - Departure time: 12h:00 30/06/2013 - Link: ?page=reservation&cmd=edit&id=90&r_r_id=189&portal=default
+3) Room: 214 - Recode: 88 - Status: CHECKIN - Change price: 3,020,000 - Arrival time: 09h:25 27/06/2013 - Departure time: 12h:00 01/07/2013 - Link: ?page=reservation&cmd=edit&id=88&r_r_id=187&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: NGUYEN MINH TEST - Room: 105 - Recode: 92 - Guest status: CHECKIN - Room arrival time: 11h:46 29/06/2013 - Room departure time: 12h:00 29/07/2013
+2) Full name: AN DINH LUAN - Room: 214 - Recode: 88 - Guest status: CHECKIN - Room arrival time: 09h:25 27/06/2013 - Room departure time: 12h:00 01/07/2013
+3) Full name: TRANH THU - Room: 214 - Recode: 88 - Guest status: CHECKIN - Room arrival time: 09h:25 27/06/2013 - Room departure time: 12h:00 01/07/2013
+4) Full name: KHAN TRUONG - Room: 214 - Recode: 88 - Guest status: CHECKIN - Room arrival time: 09h:25 27/06/2013 - Room departure time: 12h:00 01/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

@@ -1,0 +1,17 @@
+﻿----------------------ROOM-----07/09/2013-----------------------
+1) Room: 335 - Recode: 99 - Status: CHECKIN - Change price: 1,920,000 - Arrival time: 10h:30 07/09/2013 - Departure time: 12h:00 08/09/2013 - Link: ?page=reservation&cmd=edit&id=99&r_r_id=107&portal=default
+2) Room: 334 - Recode: 98 - Status: CHECKOUT - Change price: 2,320,000 - Arrival time: 09h:36 07/09/2013 - Departure time: 10h:28 07/09/2013 - Link: ?page=reservation&cmd=edit&id=98&r_r_id=106&portal=default
+3) Room: 213 - Recode: 95 - Status: CHECKIN - Change price: 3,020,000 - Arrival time: 15h:37 05/09/2013 - Departure time: 12h:00 17/09/2013 - Link: ?page=reservation&cmd=edit&id=95&r_r_id=103&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: BÙI THỊ KIỀU - Room: 335 - Recode: 99 - Guest status: CHECKIN - Room arrival time: 10h:30 07/09/2013 - Room departure time: 12h:00 08/09/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

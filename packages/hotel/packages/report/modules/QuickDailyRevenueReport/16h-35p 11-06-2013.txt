@@ -1,0 +1,19 @@
+﻿----------------------ROOM-----11/06/2013-----------------------
+1) Room: 110 - Recode: 48 - Status: CHECKOUT - Change price: 2,700,000 - Arrival time: 14h:34 11/06/2013 - Departure time: 14h:36 11/06/2013 - Link: ?page=reservation&cmd=edit&id=48&r_r_id=110&portal=default
+2) Room: 102 - Recode: 47 - Status: CHECKIN - Change price: 3,800,000 - Arrival time: 13h:00 11/06/2013 - Departure time: 12h:00 12/06/2013 - Link: ?page=reservation&cmd=edit&id=47&r_r_id=109&portal=default
+3) Room: 303 - Recode: 46 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:00 11/06/2013 - Departure time: 12h:00 12/06/2013 - Link: ?page=reservation&cmd=edit&id=46&r_r_id=108&portal=default
+4) Room: 303 - Recode: 45 - Status: CHECKOUT - Change price: 2,400,000 - Arrival time: 13h:58 11/06/2013 - Departure time: 14h:01 11/06/2013 - Link: ?page=reservation&cmd=edit&id=45&r_r_id=107&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: NGUYỄN HÒAI THƯƠNG - Room: 102 - Recode: 47 - Guest status: CHECKIN - Room arrival time: 13h:00 11/06/2013 - Room departure time: 12h:00 12/06/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+1) Room: 209 - Type: LATE CHECKIN - Recode: 5 - Status: CANCEL - Arrival time: 00h:00 11/06/2013 - Departure time: 00h:00 14/06/2013 - Link: ?page=extra_service_invoice&cmd=edit&id=2&portal=default
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

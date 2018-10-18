@@ -1,0 +1,37 @@
+/* CSS Document */
+.booking_table
+{
+	background:url(images/booking_bg.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+/*------------------------------------------------------------*/
+.readonly_input
+{
+	background-color:#FFFFFF; 
+	border:0px; 
+	border-bottom:1px dotted black;
+	padding: 0px 4px 0px 4px;
+	font-weight:bold;
+}
+.readonly_input_price
+{
+	background-color:#FFFFFF; 
+	border:0px; 
+	border-bottom:1px dotted black;
+	padding: 0px 4px 0px 4px;
+	font-weight:bold;
+	letter-spacing:1px;
+}
+.readonly_class
+{
+	border:0px;
+	border-bottom:1px dotted #000000;
+	background-color:#FFFFFF;
+	/*font-style:italic;*/
+	font-size:13px;
+	letter-spacing:1px;
+	font-weight:bold;
+}
+/*------------------------------------------------------------*/

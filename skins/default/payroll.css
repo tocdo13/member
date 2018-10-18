@@ -1,0 +1,143 @@
+.payroll_header_letter
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	color:#C30010;
+	font-weight:bold;
+}
+.payroll_header
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	color:#000000;
+	font-weight:bold;
+}
+/* CSS Document */
+body
+{
+	font-family:Arial, Helvetica, sans-serif;	
+}
+a.business_link
+{
+	color: #C30010;
+	text-decoration:none;
+}
+a.business_link:hover
+{
+	color:#FF9900;
+}
+.sidetable {
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-decoration: none;
+}
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.sidetable2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+.sidelinks {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+}
+.baseline {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+td {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.sidelinks2 {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.sidelinks2:a:hover {
+	font-family:Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+.producthdr {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2271A0;
+	font-weight: bold;
+}
+a.add_employee_tab_selected
+{
+	color:#000000;
+	background-color:#EFEFEF;
+	width:100%;
+	line-height:25px;
+	border:1px solid #666666;
+	border-bottom:0px;
+}
+a.add_employee_tab
+{
+	color:#000000;
+	background-color:#FFFFFF;
+	width:100%;
+	line-height:25px;
+	border-bottom:1px solid #666666;
+}
+.payroll_menu
+{
+	FILTER: progid:DXImageTransform.Microsoft.GradientWipe(GradientSize=0.8,wipestyle=0,motion=forward);
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background:url(images/payroll/button.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	line-height:25px;
+	width:100%;
+	color:#000000;
+	text-decoration:none;
+}
+.payroll_menu:hover
+{
+	FILTER: progid:DXImageTransform.Microsoft.GradientWipe(GradientSize=0.8,wipestyle=0,motion=forward);
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	
+	background-position:center;
+	background-repeat:no-repeat;
+	line-height:25px;
+	width:100%;
+	text-decoration:none;
+}

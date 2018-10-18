@@ -1,0 +1,13 @@
+Room Type,Room Rate,Room Code,Rate Code,Inventory Code
+Apartment 1 Bedroom,Only Room Charge,APART1,,APART1
+Apartment 1 Bedroom,Bed & BreakFast,APART1,,APART1
+Apartment 2 Bed rooms,Only room Charge,APART2,,APART2
+Deluxe Double,Only Room Charge,DLX_DBL,,DLX_DBL
+Deluxe Twin,Only Room Charge,DXL_TWN,,DXL_TWN
+Family,Only Room Charge,FAM,,FAM
+President,Only Room Charge,PRES,,PRES
+Suite,Only Room Charge,SUIT,,SUIT
+Superior Double,Only Room Charge,SUP_DBL,,SUP_DBL
+Supperior Twin,Only Room Charge,SUP_TWN,,SUP_TWN
+Supperior Twin,Bed & BreakFast,SUP_TWN,,SUP_TWN
+Seaview,Honeymoon Day,SV,SV,1

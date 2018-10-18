@@ -1,0 +1,22 @@
+a.tab_selected
+{
+	color:#000000;
+	background-color:#EFEFEF;
+	width:100%;
+	line-height:25px;
+	border:1px solid #666666;
+	border-bottom:0px;
+}
+a.tab
+{
+	color:#000000;
+	background-color:#FFFFFF;
+	width:100%;
+	line-height:25px;
+	border-bottom:1px solid #666666;
+}
+a.none_tab_area
+{
+	background-color:#FFFFFF;
+	border-bottom:1px solid #666666;
+}

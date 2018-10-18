@@ -1,0 +1,22 @@
+﻿----------------------ROOM-----30/10/2013-----------------------
+1) Room: 102 - Recode: 151 - Status: CHECKIN - Change price: 3,290,043.29 - Arrival time: 13h:51 30/10/2013 - Departure time: 12h:00 31/10/2013 - Link: ?page=reservation&cmd=edit&id=151&r_r_id=255&portal=default
+2) Room: 106 - Recode: 150 - Status: CHECKIN - Change price: 0 - Arrival time: 11h:59 30/10/2013 - Departure time: 12h:00 31/10/2013 - Link: ?page=reservation&cmd=edit&id=150&r_r_id=254&portal=default
+3) Room: 104 - Recode: 148 - Status: CHECKIN - Change price: 2,337,662.34 - Arrival time: 11h:09 30/10/2013 - Departure time: 12h:00 30/10/2013 - Link: ?page=reservation&cmd=edit&id=148&r_r_id=249&portal=default
+4) Room: 311 - Recode: 121 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:37 28/10/2013 - Departure time: 12h:00 01/11/2013 - Link: ?page=reservation&cmd=edit&id=121&r_r_id=219&portal=default
+5) Room: 303 - Recode: 118 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 00h:00 28/10/2013 - Departure time: 00h:00 03/11/2013 - Link: ?page=reservation&cmd=edit&id=118&r_r_id=215&portal=default
+6) Room: 203 - Recode: 117 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:08 28/10/2013 - Departure time: 12h:00 03/11/2013 - Link: ?page=reservation&cmd=edit&id=117&r_r_id=213&portal=default
+7) Room: 111 - Recode: 115 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 10h:56 28/10/2013 - Departure time: 12h:00 31/10/2013 - Link: ?page=reservation&cmd=edit&id=115&r_r_id=210&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: DAO QUANG MANH - Room: 102 - Recode: 151 - Guest status: CHECKIN - Room arrival time: 13h:51 30/10/2013 - Room departure time: 12h:00 31/10/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+1) Room: 102 - Type: EARLY CHECKIN - Recode: 151 - Status: CHECKIN - Arrival time: 13h:51 30/10/2013 - Departure time: 12h:00 31/10/2013 - Link: ?page=extra_service_invoice&cmd=edit&id=34&portal=default
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

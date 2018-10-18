@@ -1,0 +1,127 @@
+/* CSS Document */
+.massage-daily-summary-bound{
+	margin:5px;
+	/*background:url(../images/massage.jpg) no-repeat right top;*/
+}
+.massage-daily-summary-bound fieldset{
+	border:1px solid #80B9FF;
+}
+.massage-daily-summary-bound .title{
+	padding:5px;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#0066CC;
+}
+.time-column{
+	width:50px;
+}
+.room-column ul li{
+	list-style:none;
+	padding:3px;
+	border:1px solid #FFCC00;
+	background-color:#FFFFCC;
+	float:left;
+	width:150px;
+	text-align:right;
+	clear:left;
+	margin-bottom:2px;
+	height:20px;
+}
+.room-column.item ul li{
+	position:relative;
+	padding:3px 0px 3px 0px;
+	border:0;
+	border-bottom:1px dotted #CCCCCC;
+	background-color:#FFFFFF;
+	float:left;
+	width:100%;
+	text-align:right;
+	clear:left;
+	margin-bottom:2px;
+	/*height:21px;*/
+}
+.time-block{
+	float:left;
+	background:#FFCCCC;
+	margin-right:1px;
+	font-size:11px;
+	padding:5px 0px 5px 0px;
+}
+.date{
+	width:110px;
+}
+.hour{
+	width:39px;
+}
+.select-item{
+	color:#FF0000;
+	font-weight:bold;
+}
+.reservation{
+	font-weight:bold;
+	height:23px;
+	line-height:23px;
+}
+.reservation.BOOKED{
+	border:1px solid #8EC7FF;
+	background:#CCFFFF;
+}
+.reservation.CHECKIN{
+	border:1px solid #FFCC33;
+	background:#FFFF33;
+}
+.reservation.CHECKOUT{
+	border:1px solid #FF66CC;
+	background:#FF99CC;
+}
+.currency-list{
+	padding:5px;
+}
+.currency-list input{
+	border:1px solid #CCCCCC;
+	font-size:11px;
+	height:15px;
+	line-height:15px;
+	width:100px;
+	margin-top:5px;
+} 
+.currency-list span{
+	float:left;
+
+}
+.currency-list-bound{
+	padding:5px 0px 5px 5px;margin:5px 0px 5px 2px;
+	text-align:center;
+}
+fieldset{
+}
+.banquet-floor-name{
+	background-color:#F1F1F1;
+	line-height:25px;
+	font-weight:bold;
+	text-transform:uppercase;
+	border-bottom:1px dotted #CCCCCC;
+}
+.room-column a{
+	width:30px;
+	height:19px;
+    padding: 0px 2px;
+}
+.room-column a.BOOKED{
+	background-color:#0000FF;
+	color:#FFFFFF;
+}
+.room-column a.CHECKIN{
+	background-color:#f39500;
+	color:#FFFFFF;
+}
+.room-column a.CHECKOUT{
+	background-color:#FF00FF;
+	color:#FFFFFF;
+}
+.room-column a.CANCEL{
+	background-color:#333333;
+	color:#FFFFFF;
+}

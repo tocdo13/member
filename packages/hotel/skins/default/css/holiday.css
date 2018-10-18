@@ -1,0 +1,11 @@
+.holiday-day{
+	float:left;
+	width:50px;
+	border:1px solid #CCCCCC;
+	margin-right:1px;
+}
+.holiday-bound .content{
+	float:left;
+	width:1280px;
+	border:1px solid #999999;
+}

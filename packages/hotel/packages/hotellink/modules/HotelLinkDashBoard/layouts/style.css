@@ -1,0 +1,40 @@
+body {-webkit-text-stroke: 0px !important; -webkit-font-smoothing: antialiased! important;}
+#pitch-setting-content{
+  position: relative;  
+}
+#pitch-menu-left{
+    width: 200px;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    border: 1px solid #A9A9A9;
+    font-size: 14px;
+    box-shadow: 5px 10px 8px #888888;
+}
+#pitch-menu-left li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #A9A9A9;
+    list-style-type: none;
+    font-family: San Francisco;
+    cursor: pointer;
+}
+.pitch-setting-menu-active{
+    background-color: #1BA1E2;
+}
+#pitch-setting-content{
+    min-height: 800px;
+    width: 1400px;
+}
+#pitch-setting-main{
+    min-height: 800px;
+    width: 1000px;
+    border: 1px solid #A9A9A9;
+    margin-left: 250px;
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}

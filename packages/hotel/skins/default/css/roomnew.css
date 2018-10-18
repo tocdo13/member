@@ -1,0 +1,300 @@
+.room-bound{
+	position:relative;
+	/*border:1px solid #999999;*/
+	margin:4px;float:left;
+    height: 115px;
+	z-index:0;
+}
+.room-name{
+	float:left;
+	/*background:url(packages/core/skins/default/images/gradient_bg.jpg);*/
+	color:#666666;
+	font-size:11px;
+	overflow:hidden;
+	/*border-bottom:1px solid #999999;*/
+	text-align:left;
+	width:101px;
+	height:15px;
+}
+.room-name span{
+	font-size:11px;
+	color:#0066CC;
+	font-weight:bold;
+}
+.room-item-bound{
+	/*background:#eeefef;float:left;height:66px;width:10px;*/
+	padding:2px;
+	border-left:0px;
+}
+.room.input_class
+{
+	border:0px;
+	border-bottom:1px dotted #000000;
+	background-color:#FFFFFF;
+	font-style:italic;
+	font-size:12px;
+	letter-spacing:1px;
+}
+a.room,a.room:visited{
+	border:1px solid gray;
+	/*border-top:4px solid #CCCCCC;
+	border-bottom:4px solid #CCCCCC;*/
+	float:left;
+	width:100px;
+	height:80px;
+	text-align:center;
+	display:block;
+	font-size:12px;
+	padding-top:2px;
+	background-color:#FFFFFF;
+    overflow: hidden;
+}
+a.room:hover,a.room:visited:hover{
+	background-color:lightgray;
+	text-decoration:none;
+}
+.floor-name{
+	border:1px solid #808080;
+}
+a.room.DRAG,a.room.DRAG:visited{
+	border:1px solid black;
+}
+a.BOOKED,a.BOOKED:visisted{
+	background:#0066FF;
+}
+a.item_room{
+	float:left;
+	width:8px;height:8px;
+	/*border:1px solid #FFFFFF;
+	background:#FFFFFF;*/
+	margin-bottom:2px;
+}
+a.item_room.BOOKED,a.item_room.BOOKED:visited{
+	background-color:#05ACEE;
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+}
+a.item_room.OCCUPIED,a.item_room.OCCUPIED:visited{
+	background-color:#FFCC33;
+    height: 15px;
+    width: 15px;
+}
+a.room.BOOKED,a.room.BOOKED:visited{
+	background-color:#47BDF4;
+	/*border:4px solid #0054a2;
+	border-left:4px solid #5290ca;
+	border-right:4px solid #5290ca;*/
+}
+a.room.REPAIR,a.room.REPAIR:visited{
+	background-color:#A4A4A4;
+	/*border:4px solid #111111;
+	border-left:4px solid #606060;
+	border-right:4px solid #606060;*/
+}
+a.room.HOUSEUSE,a.room.HOUSEUSE:visited{
+	border: 4px solid #EEEEEE;
+    /*border-top: 4px solid #CCCCCC;
+    border-bottom: 4px solid #CCCCCC;
+    background-color: #FFFFFF;*/
+}
+a.room.OCCUPIED,a.room.OCCUPIED:visited{
+	background-color:#FBE70D;
+	/*border:4px solid #d5c800;
+	border-left:4px solid #efe87d;
+	border-right:4px solid #efe87d;*/
+}
+a.room.BUSY,a.room.BUSY:visited{
+	background-color:#FFFFFF;
+	border:4px solid #666666;
+}
+a.room.DAYUSED,a.room.DAYUSED:visited{
+	background-color:#E0A61F;
+	/*border:4px solid #c05901;	
+	border-left:4px solid #f5ac6e;
+	border-right:4px solid #f5ac6e;*/	
+}
+a.room.OVERDUE,a.room.OVERDUE:visited{
+	background-color:#F78181;
+	/*border:4px solid #c20206;
+	border-left:4px solid #bf4c4f;
+	border-right:4px solid #bf4c4f;*/
+}
+a.item_room.OVERDUE,a.item_room.OVERDUE:visited{
+	background-color:#FF0000;
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+}
+a.room.OVERDUE_BOOKED,a.room.OVERDUE_BOOKED:visited{
+	background-color:#52EBBB;
+	/*border:4px solid #007047;
+	border-left:4px solid #40b48a;
+	border-right:4px solid #40b48a;*/
+}
+a.item_room.OVERDUE_BOOKED,a.item_room.OVERDUE_BOOKED:visited{
+	background-color:#37CB9A;
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+}
+a.room.RESOVER,a.room.RESOVER:visited{
+	background-color:#FFFFFF;
+	border:4px solid #00BB5E;
+	border-left:4px solid #2FFF97;
+	border-right:4px solid #2FFF97;		
+}
+a.item_room.RESOVER,a.item_room.RESOVER:visited{
+	background-color:#0066FF;
+}
+a.room.SHORT_TERM,a.room.SHORT_TERM:visited
+{
+	background-color:#EBEADC;
+	border:4px solid #EBEADC;
+}
+a.room.EXPECTED_CHECKOUT,a.room.EXPECTED_CHECKOUT:visited{
+	background-color:#FF00FF;
+	/*border:4px solid #8a148a;
+	border-left:4px solid #bd4fbd;
+	border-right:4px solid #bd4fbd;*/
+}
+a.room.CHECKOUT,a.room.CHECKOUT:visited
+{
+	border:4px solid #D500D5;
+	border-left:4px solid #FF66FF;
+	border-right:4px solid #FF66FF;
+}
+a.item_room.CHECKOUT,a.item_room.CHECKOUT:visited{
+	background-color:#FF66FF;
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+}
+a.item_room.EXPECTED_CHECKOUT,a.item_room.EXPECTED_CHECKOUT:visited{
+	background-color:#FF00FF;
+    height: 15px;
+    width: 15px;
+}
+a.room.selected,a.room.selected:visited{
+	border:4px solid #B61063;
+	
+}
+.room.arround
+{
+	border:1px solid #CCCCCC;
+	z-index:-1;
+	background:#FFFFFF;
+}
+
+
+.label{
+	background-color:#FFFFFF;
+	width:100px;
+	overflow:hidden;
+}
+.value{
+	background-color:#FFFFFF;
+	width:180px;
+}
+a.room.map
+{
+	display:block;
+	color:#5D5959;
+	background-color:#FFFFFF;
+	border-bottom:1px solid #D1DBDC;
+	width:100%;
+	line-height:24px;
+	font-size:11px;
+	text-indent:10px;
+	font-weight:bold;
+	text-align:left;
+}
+a.room.map:hover
+{
+	color:#000000;
+	font-size:11px;
+	background-color:#EFEEEE;
+}
+.hk-status-button{
+	font-size:11px;
+}
+.room-map-customer-search-box{
+	background:url(packages/core/skins/default/images/buttons/search.gif) no-repeat 0% 0%;
+	background-color:#FFFFFF;
+	border:1px solid #9DC9FF;
+}
+.room-map-edit-link{
+	 font-weight:normal;
+
+	 font-size:11px;
+	 color:#FF0000;
+}
+.room-map-bill-number{
+	font-weight:bold;
+	color:#FF0000;
+	font-size:10px;
+}
+#information_bar{
+	position:absolute;
+	top:0px;
+	left:0px;
+	float:left;
+	border:1px solid #FF3300;
+	display:none;
+	background-color:#EFEFEF;
+	z-index:1;
+}
+#information_bar .title{
+	background-color:#FFCC00;		
+	border-bottom:1px solid #FF3300;
+	height:20px;
+}
+#information_bar .title div{
+	float:left;
+	color:#000000;
+	height:20px;
+	line-height:20px;
+}
+#information_bar .title div div{
+	width:18px;
+	padding-top:2px;
+	border:0px;
+	height:18px;
+}
+#information_bar .content{
+	clear:both;
+}
+#information_bar table td{
+	border-bottom:1px dotted #CCCCCC;
+}
+#information_bar h3{
+	margin-bottom:0px;
+}
+.checkin-today{
+	color:#0033FF;
+}
+.room-foc{
+	font-size:10px;
+	color:#FF0000;
+}
+.room-info-content{
+	background:#FFFFFF;
+}
+.full_screen{
+	position:absolute;
+	top:0px;
+	left:0px;
+	float:left;
+	width:99.7%;
+	background-color:#FFF;
+	border:2px solid #F00;
+}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>

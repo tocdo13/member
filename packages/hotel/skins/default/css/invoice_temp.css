@@ -1,0 +1,152 @@
+#invoice{
+	width:100%;
+}
+#invoice a,#invoice table,#invoice td,#invoice div,#invoice span,#invoice h{
+	font-family:"Times New Roman", Times, serif;
+	font-size:14px;
+}
+#invoice .invoice-title{
+	font-size:18px;
+	font-weight:bold;
+	color:#333333;
+	margin:0px;
+	padding:0px;
+}
+#invoice .invoice-sub-title{
+	font-size:14px;
+	font-weight:bold;	
+	color:#333333;
+	margin:0px;
+	padding:0px;
+}
+#invoice .invoice-contact-info{
+	color:#666666;
+	font-size:12px;
+}
+a.report_link{
+	font-weight:100;
+	color:#000000;
+	text-decoration:none;
+}
+a.report_link:hover{
+	font-weight:100;
+	color:#FF6600;
+	text-decoration:underline;
+}
+.data_title {
+	font-weight:500;
+}
+.genneral-info-table{
+}
+.seperator-line{
+	border-bottom:1px solid #000000;
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+/*----------------------------------------------------------------------*/
+.item-header{
+	float:left;
+	width:100%;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.date{
+	float:left;
+	width:10%;
+	text-align:left;
+	padding:2px 2px 2px 5px;
+}
+#invoice .description{
+	float:left;
+	width:35%;
+	text-align:left;
+	padding:2px 2px 2px 5px;
+}
+#invoice .amount{
+	float:left;
+	width:13%;
+	text-align:right;
+	padding:2px 0px 2px 0px;
+}
+#invoice .service_charge{
+	float:left;
+	width:12%;
+	text-align:right;
+	padding:2px 0px 2px 0px;
+}
+#invoice .tax{
+	float:left;
+	width:12%;
+	text-align:right;
+	padding:2px 0px 2px 0px;
+}
+#invoice .total{
+	float:left;
+	width:13%;
+	text-align:right;
+	padding:2px 0px 2px 0px;
+}
+
+.item-body{
+	float:left;
+	width:100%;
+}
+.sub-item-body{
+	float:left;
+	width:100%;
+}
+.item-body.total-group{
+	border-top:1px solid #000000;
+}
+.item-body.total-group .sub-item-body .date,
+.item-body.total-group .sub-item-body .description,
+.item-body.total-group .sub-item-body .amount{
+	text-align:right;
+}
+.to-be-continued{
+	float:left;
+	width:100%;
+	font-weight:bold;
+	color:#999999;
+	clear:both;
+	text-align:center;
+}
+/*-------------------------------For tour invoice---------------------------------------------------------*/
+.item-body .total-group{
+	font-weight:bold;
+}
+.item-body .last-row{
+	border-bottom:0px;
+}
+.item-body span{
+	float:right;
+	width:13%;
+	height:18px;
+	text-align:right;
+}
+.item-body span.label{
+	float:left;
+	width:86%;
+	text-align:right;
+}
+.item-body .total-amount{
+	font-size:12px;
+	background:#EFEFEF;
+	float:right;
+	padding:2px;
+	border:1px solid #CCCCCC;
+	white-space:nowrap;
+	width:300px;
+}
+.item-body .total-amount span{
+	width:100px;
+	font-size:14px;
+	font-weight:bold;
+}
+.item-body .label.remain{
+	font-style:italic;
+}
+.item-body .remain{
+	font-style:italic;
+}

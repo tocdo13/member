@@ -1,0 +1,73 @@
+product_array={'':'','1':{
+                    'id':'1',
+                    'product_id':'BIA001',
+                    'name':'Bia 333',
+                    'price':'20000',
+                    'price_id':'1',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'7',
+                    'unit':'Lon',
+                    'unit_id':'1',
+                    'type':'GOODS'}
+                    ,'2':{
+                    'id':'2',
+                    'product_id':'BIA002',
+                    'name':'Bia SG xanh',
+                    'price':'25000',
+                    'price_id':'2',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'7',
+                    'unit':'Lon',
+                    'unit_id':'1',
+                    'type':'GOODS'}
+                    ,'3':{
+                    'id':'3',
+                    'product_id':'BIA003',
+                    'name':'Bia Ken',
+                    'price':'30000',
+                    'price_id':'3',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'7',
+                    'unit':'Lon',
+                    'unit_id':'1',
+                    'type':'GOODS'}
+                    ,'4':{
+                    'id':'4',
+                    'product_id':'DAN001',
+                    'name':'Bim bim',
+                    'price':'15000',
+                    'price_id':'4',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    ,'5':{
+                    'id':'5',
+                    'product_id':'DAN002',
+                    'name':'Bánh gạo',
+                    'price':'20000',
+                    'price_id':'5',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    ,'6':{
+                    'id':'6',
+                    'product_id':'DAN003',
+                    'name':'Kẹo M&M',
+                    'price':'20000',
+                    'price_id':'6',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'9',
+                    'unit':'Túi',
+                    'unit_id':'4',
+                    'type':'GOODS'}
+                    }

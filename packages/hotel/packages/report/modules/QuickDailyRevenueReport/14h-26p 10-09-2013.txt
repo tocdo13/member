@@ -1,0 +1,23 @@
+﻿----------------------ROOM-----10/09/2013-----------------------
+1) Room: 303 - Recode: 3 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:23 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=3&r_r_id=11&portal=default
+2) Room: 213 - Recode: 3 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 14h:23 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=3&r_r_id=10&portal=default
+3) Room: 105 - Recode: 3 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 14h:23 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=3&r_r_id=9&portal=default
+4) Room: 521 - Recode: 2 - Status: CHECKIN - Change price: 3,400,000 - Arrival time: 14h:13 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=2&r_r_id=8&portal=default
+5) Room: 321 - Recode: 2 - Status: CHECKIN - Change price: 1,900,000 - Arrival time: 14h:13 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=2&r_r_id=7&portal=default
+6) Room: 243 - Recode: 2 - Status: CHECKIN - Change price: 1,900,000 - Arrival time: 14h:13 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=2&r_r_id=6&portal=default
+7) Room: 129 - Recode: 2 - Status: CHECKIN - Change price: 1,900,000 - Arrival time: 14h:13 10/09/2013 - Departure time: 12h:00 11/09/2013 - Link: ?page=reservation&cmd=edit&id=2&r_r_id=5&portal=default
+8) Room: 303 - Recode: 2 - Status: CHECKOUT - Change price: 2,400,000 - Arrival time: 14h:13 10/09/2013 - Departure time: 14h:22 10/09/2013 - Link: ?page=reservation&cmd=edit&id=2&r_r_id=4&portal=default
+9) Room: 211 - Recode: 2 - Status: CHECKOUT - Change price: 2,400,000 - Arrival time: 14h:13 10/09/2013 - Departure time: 14h:22 10/09/2013 - Link: ?page=reservation&cmd=edit&id=2&r_r_id=3&portal=default
+10) Room: 102 - Recode: 1 - Status: CHECKOUT - Change price: 3,800,000 - Arrival time: 14h:11 10/09/2013 - Departure time: 14h:14 10/09/2013 - Link: ?page=reservation&cmd=edit&id=1&r_r_id=1&portal=default
+
+
+----------------------GUEST----------------------------
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

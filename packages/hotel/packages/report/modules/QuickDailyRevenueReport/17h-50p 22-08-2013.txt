@@ -1,0 +1,20 @@
+﻿----------------------ROOM-----22/08/2013-----------------------
+1) Room: 308 - Recode: 41 - Status: CHECKIN - Change price: 2,337,662.34 - Arrival time: 13h:45 22/08/2013 - Departure time: 12h:00 25/08/2013 - Link: ?page=reservation&cmd=edit&id=41&r_r_id=77&portal=default
+2) Room: 303 - Recode: 37 - Status: CHECKIN - Change price: 2,077,922.08 - Arrival time: 10h:05 22/08/2013 - Departure time: 12h:00 23/08/2013 - Link: ?page=reservation&cmd=edit&id=37&r_r_id=67&portal=default
+3) Room: 302 - Recode: 37 - Status: CHECKIN - Change price: 3,290,043.29 - Arrival time: 10h:05 22/08/2013 - Departure time: 12h:00 23/08/2013 - Link: ?page=reservation&cmd=edit&id=37&r_r_id=66&portal=default
+4) Room: 301 - Recode: 37 - Status: CHECKIN - Change price: 2,597,402.60 - Arrival time: 10h:05 22/08/2013 - Departure time: 12h:00 23/08/2013 - Link: ?page=reservation&cmd=edit&id=37&r_r_id=65&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: BB BB - Room: 303 - Recode: 37 - Guest status: CHECKIN - Room arrival time: 10h:05 22/08/2013 - Room departure time: 12h:00 23/08/2013
+2) Full name: HHH HH - Room: 302 - Recode: 37 - Guest status: CHECKIN - Room arrival time: 10h:05 22/08/2013 - Room departure time: 12h:00 23/08/2013
+3) Full name: HT HT - Room: 301 - Recode: 37 - Guest status: CHECKIN - Room arrival time: 10h:05 22/08/2013 - Room departure time: 12h:00 23/08/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

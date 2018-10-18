@@ -1,0 +1,13 @@
+product_array={'':'','1695':{
+                    'id':'1695',
+                    'product_id':'BB',
+                    'name':'uiu',
+                    'price':'800000',
+                    'price_id':'1695',
+                    'start_date':'0',
+                    'end_date':'0',
+                    'category_id':'',
+                    'unit':'set',
+                    'unit_id':'',
+                    'type':'SET'}
+                    }

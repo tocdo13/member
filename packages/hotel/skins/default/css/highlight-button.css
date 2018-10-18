@@ -1,0 +1,417 @@
+/** Default button by N2D 01/10/2017 */
+/** Ghi lại */
+.btn-save .button{
+    display: inline-block;
+    color: #FFF;
+    background: #009688;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-save .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-save .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-save{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** Lưu */
+.btn-save-stay .button{
+    display: inline-block;
+    color: #FFF;
+    background: #3D5AFE;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-save-stay .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-save-stay .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-save-stay{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** Tiếp tục */
+.btn-save-continue .button{
+    display: inline-block;
+    color: #FFF;
+    background: #4CAF50;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-save-continue .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-save-continue .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-save-continue{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** Quay lại */
+.btn-back .button{
+    display: inline-block;
+    color: #FFF;
+    background: #00BCD4;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-back .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-back .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-back{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** search */
+.btn-search .button{
+    display: inline-block;
+    color: #FFF;
+    background: #448AFF;
+    border: 1px solid #009688;
+    border-radius: 4px;
+    margin: 0;
+    height: 30px;
+    line-height: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-search .button:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 80px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-search .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-search{
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: left;
+}
+/** search new */
+.btn-search-new .button{
+    display: inline-block;
+    color: #FFF;
+    background: #448AFF;
+    border: 1px solid #009688;
+    border-radius: 4px;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-search-new .button:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 80px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-search-new .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-search-new{
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: left;
+}
+/** add */
+.btn-add .button{
+    display: inline-block;
+    color: #FFF;
+    background: #FF9800;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-add .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-add .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-add{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** AddMiInput*/
+.AddMiInput .button{
+    top: 3px;
+    display: inline-block;
+    color: #FFF;
+    background: #33691E;
+    border: 1px solid #009688;
+    border-radius: 4px;
+    margin: 0;
+    height: 35px;
+    line-height: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.AddMiInput .button:before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 80px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.AddMiInput .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.AddMiInput{
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: left;
+}
+/** Blue */
+.btn-blue .button{
+    display: inline-block;
+    color: #FFF;
+    background: #2196F3;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-blue .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-blue .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-blue{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** Red */
+.btn-red .button{
+    display: inline-block;
+    color: #FFF;
+    background: #F44336;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-red .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-red .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-red{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** violet */
+.btn-violet .button{
+    display: inline-block;
+    color: #FFF;
+    background: #673AB7;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-violet .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-violet .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-violet{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** light-green */
+.btn-light-green .button{
+    display: inline-block;
+    color: #FFF;
+    background: #8BC34A;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-light-green .button:before{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, .7);
+    transform: rotate(20deg);
+}
+
+.btn-light-green .button:hover:before{
+	left: 150px;
+	transition: all .5s;
+    cursor: pointer;
+}
+.btn-light-green{
+    margin-bottom:100px;
+    font-weight: bold;
+    text-align: left;
+}
+/** Cursor */
+.button{
+    cursor: pointer;
+}

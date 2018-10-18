@@ -1,0 +1,101 @@
+       <table width="900px;" style=" border: 1px solid #00b2f9; padding: 5px;" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td width="100%">
+                    <table cellSpacing=0 cellPadding=2 border=0 width="100%">
+                        <tr>
+                            <td align="center"> 
+                                <table cellpadding="0" width="100%" border="0">
+                                    <tr>
+                                        <td width="30%" align="center" valign="middle" class="logo"><img src="F:/NewwayPMS/wamp/www/version18/resources/interfaces/images/default/logo.jpg" alt="logo" width="300px;" /></td>
+                                        <td width="40%" align="center" class="title" valign="top" style="font-size:30px;font-weight:bold;text-transform:uppercase;">
+                                            Hóa Đơn SPA
+                                        </td>
+                                        <td width="30%" align="left">
+                    						<span style="font-size:15px;font-weight:bold;">No :</span> <span style="font-weight:bold">2</span><br />
+                    						<span style="font-size:15px;">Ngày: 01/09/2018</span><br />
+                    						<span style="font-size:15px;">Loại tiền: VND</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                    					<td colspan="2" align="left">
+                    						Tên khách:     
+                                        </td>    
+                    				</tr>
+                                    <tr>
+                                        <td colspan="2" align="left">
+                    						Số phòng: 
+                    					</td>
+                                    </tr>
+                                </table>
+                                <br />
+                                <div style="width:100%;">
+                                                                        <table width="100%" border="1" cellspacing="0" cellpadding="2" bordercolor="#000000">
+                                             <tr bgcolor="#EFEFEF">
+                        					    <th width="10%" nowrap="nowrap">R</th>
+                        					    <th align="left" width="30%">Tên</th>
+                        					    <th width="15%" align="right">Giá</th>
+                        					    <th align="center" width="10%" nowrap="nowrap">Số Lượng</th>
+                        						<th width="20%" align="right">Tổng</th>
+                        				      </tr>
+                                        
+                                                                                <tr valign="top">
+                        					    <td align="center" nowrap="nowrap">VIP01</td>
+                        					    <td align="left">
+                        							MASSAGE BODY                        						</td>
+                        					    <td align="right">1,000,000</td>
+                        						<td align="center">1</td>
+                        						<td align="right">1,000,000</td>
+                        					</tr>
+                                                                                <tr valign="top">
+                        					    <td align="center" nowrap="nowrap">VIP02</td>
+                        					    <td align="left">
+                        							FOOT MASSAGE                        						</td>
+                        					    <td align="right">500,000</td>
+                        						<td align="center">1</td>
+                        						<td align="right">500,000</td>
+                        					</tr>
+                                                                                <tr>
+                                                <td colspan="3" align="right"><strong>Tổng</strong>:</td>
+                        					    <td align="center"><strong>2</strong></td>
+                        						<td align="right"><strong>1,500,000</strong></td>
+                                            </tr>
+                                        </table>    
+                                                                     
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="2" bordercolor="#000000" style="padding-right: 2px; ;">
+                                        <tr>
+                                            <th></th>
+                                            <th width="100%" align="right">
+                                                                                              </th>
+                                            
+                                        </tr>
+                                        
+                                        
+                                    </table>
+                                    
+                                    <table width="50%" border="0" cellspacing="0" cellpadding="2" bordercolor="#000000" style="float: right; padding-right:2px;">
+                                        <tr>
+                                            <th align="right">Tip:</th>
+                                            <th align="right">0</th>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th align="right">Phí :</th>
+                                            <th align="right">64,935.06</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="right">Thuế :</th>
+                                            <th align="right">136,363.64</th>
+                                        </tr>
+                                        <tr>
+                                            <th align="right">Tổng số tiền: </th>
+                                            <th align="right">1,500,000.00</th>
+                                        </tr>
+                                    </table>
+                                    <br clear="all"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table> 

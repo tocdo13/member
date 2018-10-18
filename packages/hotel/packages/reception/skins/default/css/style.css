@@ -1,0 +1,137 @@
+.select-tour{
+	font-weight:bold;
+	color:#FF0000;
+}
+.update-room-info{
+	font-size:11px;
+	color:#0033CC;
+}
+.legend-title:hover {background: #fff !important;}
+.change-price-span{
+	float:left;
+	font-size:11px;
+	text-align:center;
+	border:1px solid #A6D2FF;
+	margin:2px 2px 0px 2px;
+    padding:2px 2px 0px 2px;
+	background:lightgray;
+}
+span.change-price-input{
+
+}
+.change-price-input input{
+	border:1px solid #CCCCCC;
+	text-align:center;
+	width:50px;
+    font-size:10px;
+    height:15px;
+}
+.multi-input-header input[type="checkbox"] {margin: 1.1px;}
+.select-room{
+	position:relative;
+	top:0;left:0;
+	width:50px;
+	color:#FFFFFF;
+	font-weight:bold;
+	cursor:pointer;
+	background:#0066FF;
+	text-align:center;
+}
+img.select-rate{
+	position:relative;
+	top:0;left:0;
+	cursor:pointer;
+}
+.service-list,.currency-list{
+	padding:5px;
+}
+.service-list input,.currency-list input{
+	border:1px solid #CCCCCC;
+	font-size:11px;
+	height:15px;
+	line-height:15px;
+	width:40px;
+	margin-top:2px;
+} 
+.service-list .multi-input-extra input{
+	width:90px;
+	border:1px solid #CCCCCC;
+}
+
+.service-list span,.currency-list span{
+	float:left;
+	font-size:11px;
+
+}
+.service-list-bound,.payment-type-bound{
+	float:left;width:99%;padding:5px 0px 5px 5px;
+	margin:5px 0px 5px 2px;
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+}
+.check-availability-item{
+	float:left;
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #CCCCCC;
+	width:100%;
+	font-size:11px;
+}
+.check-availability-day{
+	float:left;
+	font-size:11px;
+	color:#F30;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	margin-right:1px;
+	border-right:1px solid #FFCC33;
+	background-color:#FFFF33;
+	text-align:center;
+	padding-left:2px;
+}
+.check-availability-day input{
+	font-size:11px;
+	font-weight:bold;
+	color:#03C;
+}
+.check-availability-day.header{
+	background:#EFEFEF;
+	color:#039;
+}
+.room-rate-list{
+	position:absolute;top:0px;left:0px;width:200px;background-color:#FC0;border:5px solid #FFFFFF;vertical-align:top;
+}
+.room-rate-list div{
+	height:15px;background-color:#06C;border:1px solid #FFF;text-align:center;
+	margin:1px;color:#FFFFFF;font-weight:bold;text-transform:uppercase;
+}
+.room-list{
+	position:absolute;top:0px;left:0px;width:600px;background-color:#EFEFEF;border:5px solid #89A6CF;vertical-align:top;
+}
+.room-list div.room-bound{  
+	height:15px;border:3px solid #4986E7;text-align:center;
+	margin:1px;color:#89A6CF;font-weight:bold;text-transform:uppercase; background:#FFF;
+}
+.room-list div.room-bound:hover{  
+	cursor:pointer;
+	background:#FC9;
+}
+.room-list div.title-room-list{  
+	height:15px;border:1px solid #4986E7;text-align:center;
+	margin:1px;color:#89A6CF;font-weight:bold;text-transform:uppercase; background:#FFF;
+}
+.traveller_compact{
+	border:1px solid #CCCCCC;background-color:#f2f4ce;margin-right:0px;margin-bottom:5px;	
+}
+.traveller_compact tr td{	
+	font-size:11px;
+}
+.folio_button{   
+	width:50px;
+	height:20px;	
+	padding:0px;
+}
+.reservation_room_bound{
+
+}

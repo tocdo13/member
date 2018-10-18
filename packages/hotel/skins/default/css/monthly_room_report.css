@@ -1,0 +1,158 @@
+.td1{
+	color:#000;border:1px solid #CCCCCC;
+	background:#E4ECF7;
+}
+.td1 div{
+	float:left;
+	width:90px;
+	height:20px;
+	font-size:11px;
+	font-weight:bold;
+}
+.th{
+	color:#333333;
+	font-size:11px;
+	border:1px solid #D0D7E5;
+	background:url(../../../../core/skins/default/images/gradient_bg.jpg) repeat-x 0%;	
+}
+.th.current{
+	background:#FFCC00;
+	border:1px solid #FF9D3C;
+}
+.div_freezepanes_wrapper{
+	width:980px;
+	position:relative;height:450px;
+	overflow:hidden;background:#fff;
+}
+.div_verticalscroll{
+	position: absolute;right:0px;width:16px;height:100%;
+	background:#D2FFD2;border-left:1px solid #C0C0C0;
+}
+.v_bar{
+	position:absolute;
+	top:20px;
+	width:14px;
+	height:30px;
+	border:1px solid #006666;
+	background:#009999;
+	vertical-align:middle;
+}
+.v_bar img{
+	width:13px;
+}
+.buttonUp{
+	width:15px;position: absolute;top:2px;
+}
+.buttonDn{
+	width:15px;position: absolute;bottom:22px;
+}
+.div_horizontalscroll{
+	position: absolute;bottom:0px;width:100%;height:17px;
+	background:#D2FFD2;border-top:1px solid #C0C0C0;
+}
+.buttonRight{
+	width:15px;position: absolute;left:0px;padding-top:2px;
+}
+.buttonLeft{
+	width:15px;position: absolute;right:22px;padding-top:2px;
+}
+.room-element{	
+	width:100px;
+	border-right:1px solid #D0D7E5;
+	border-bottom:1px solid #D0D7E5;	
+	font-size:11px
+}
+.room-element div{
+	float:left;
+	width:80px;	
+}
+.room-element div a{
+	color:#003399;
+}
+.room-element-selected{
+	width:100px;
+	border-right:1px solid #FF9D3C;
+	border-bottom:1px solid #FF9D3C;
+	background-color:#FFCC00;
+}
+a.book,a.book:visited{
+	padding:2px;
+	color:#0033CC;
+	font-weight:bold;
+}
+a.resover,a.resover:visited{
+	padding:2px;
+	font-size:9px;border:1px solid #00D700;
+}
+a.oc,a.oc:visited{
+	padding:2px;
+	color:#FF0000;
+	font-weight:bold;
+}
+a.out,a.out:visited{
+	padding:2px;
+	color:#999999;
+}
+a.overdue,a.overdue:visited{
+	padding:2px;
+	font-size:9px;border:1px solid #FF0000;
+}
+.cancel,a.cancel,a.cancel:visited{
+	padding:2px;
+	font-size:9px;
+	color:#9999CC;
+}
+.out,a.out,a.out:visited{
+	padding:2px;
+	font-size:11px;
+	color:#FF3366;
+}
+.select_room
+{
+	background-color:#0066FF;
+}
+.monthly-room-report-bound{
+}
+.booking-toolbar{
+	padding:5px;width:100%;
+}
+/*------------For room status--------------*/
+a.room,a.room:visited{
+	float:left;
+	width:80px;
+	height:20px;
+	overflow:hidden;
+	text-align:center;
+	display:block;
+	font-size:11px;
+	background-color:#FFFFFF;
+	padding:0px;
+}
+a.room.BOOKED,a.room.BOOKED:visited{
+	background-color:#FFFFFF;
+	border:3px solid #0066FF;
+	border-left:0px;
+	border-right:0px;
+}
+a.room.REPAIR,a.room.REPAIR:visited{
+	background-color:#CCCCCC;
+	border:3px solid #111111;
+	border-left:0px;
+	border-right:0px;
+}
+a.room.HOUSEUSE,a.room.HOUSEUSE:visited{
+	background-color:#CCCCCC;
+	border:3px solid #111111;
+}
+a.room.OCCUPIED,a.room.OCCUPIED:visited{
+	background-color:#FFFF99;
+	border:3px solid #F7A204;
+	border-left:0px;
+	border-right:0px;
+}
+a.room.CHECKOUT,a.room.CHECKOUT:visited
+{
+	border:3px solid #D500D5;
+	border-left:0px;
+	border-right:0px;
+}

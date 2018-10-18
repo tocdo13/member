@@ -1,0 +1,161 @@
+        <div id="transform_a4" style="width:800px; padding:5px;text-align:left; margin: 0 auto; border: 1px solid #00b2f9; padding: 5px;">
+            <div class="restaurant-invoice-bound" style="width: 100%;">
+            	<div class="item-body">
+                	<table cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:10px;">
+                    	<tr>
+                        	<td rowspan="3" ><img src="F:/NewwayPMS/wamp/www/version18/resources/interfaces/images/default/logo.jpg" width="250px;" /></td>
+                        	<td style="font-size:18px;font-weight:bold;" align="center">INVOICE / HÓA ĐƠN</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Ngày :13/09/2018 16:32'</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Giờ in:18:19 13/09/2018</td>
+                        </tr>
+                   
+                    </table>
+                    <br />
+                    <div align="left">
+                    	<span style="font-size:14px;font-weight:bold;">Đơn vị bán hàng :Nhà hàng 01</span>
+                    </div>
+                </div>
+                <br />
+                <div class="item-body">
+                    <div valign="top" align="left">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                                                     <td colspan="2" align="left">Tên khách: </td>
+                                     
+                                     <td align="right">Table No:BÀN 11,BÀN 12</td>
+                                        
+                                 
+                            </tr>
+                            
+                            <tr>
+                                <td style="border-bottom:1px solid #000000;">công ty: </td>
+                                <td align="center" style="border-bottom:1px solid #000000;">Mã:000006</td>
+                                <td align="right" style="border-bottom:1px solid #000000;">Số khách :0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <div class="item-body"></div>
+                    <div class="item-body"></div>
+                    <table width="100%" cellpadding="2" cellspacing="0" border="0" bordercolor="#000000">
+                        <tr>
+                            <th width="50%" align="left"  style="border-bottom:1px solid #000000;">Diễn giải<br /> Description </th>
+                            <th width="10%" align="center"  style="border-bottom:1px solid #000000;">Số lượng<br />used</th>
+                            <th width="15%" align="right"  style="border-bottom:1px solid #000000;">Đơn giá<br />Price</th>
+                            <th width="10%" align="right" nowrap="nowrap"  style="border-bottom:1px solid #000000;">Giảm(%)<br />Disc(%)</th>
+                            <th width="20%" align="right" nowrap="nowrap" style="border-bottom:1px solid #000000;">Thành tiền<br />Amount</th>
+                        </tr>
+                               
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">1.bia ken<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">3</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">11,000</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">10%</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">29,700</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">2.set200k<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">5</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">100,000</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">500,000</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">3.bia 333<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">25</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">4.bia sg xanh<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">6</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">5.1<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">4</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">10,000</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">40,000</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">6.bia sg xanh<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">1</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">10,000</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">10,000</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">7.set03<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">2</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">100,000</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">200,000</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">8.bia ken<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">10</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                </tr>
+                                
+                                <tr valign="top">
+                                    <td align="left" style="border-bottom:1px solid #000000;">9.bia sg xanh<div class="item-body"></div></td>
+                                    <td align="center" style="border-bottom:1px solid #000000;">6</td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                    <td align="center" style="border-bottom:1px solid #000000;"></td>
+                                    <td align="right" style="border-bottom:1px solid #000000;">0</td>
+                                </tr>
+                                             </table>
+                    <br />
+                    <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                        <tr>
+                            <td align="right">
+                                <table width="700">
+                                    <tr>
+                                       <td width="70%"><strong>Tổng/Amount:</strong><div class="sub-item-body"></div></td>
+                                       <td width="30%" align="right">783,000</td>
+                                    </tr>
+                                                                                <tr>
+                                                <td><strong>Sản phẩm giảm giá/Product Discounted:  </strong><div class="sub-item-body"></div></td>
+                                                <td align="right">3,300</td>   
+                                            </tr>    
+                                           
+                                            <tr>
+                                                <td><strong> (5%)Phí dịch vụ/Service charge: </strong><div class="sub-item-body"></div></td>
+                                                <td align="right">38,985</td>
+                                            </tr>   
+                                         
+                                            <tr>
+                                                <td><strong>(10%) Thuế/Tax:</strong><div class="sub-item-body"></div></td>
+                                                <td align="right">81,868.50</td>
+                                            </tr>
+                                                                                  <tr>
+                                                <td nowrap="nowrap" align="left" style="border:1px solid #000;border-right:0px;"><strong>Tổng tiền thanh toán/Grant Total:</strong><div class="sub-item-body"></div></td>
+                                                <td align="right" style="border:1px solid #000;border-left:0px;"><span style="font-size:18px;font-weight:bold; color: red;">900,554</span></td>
+                                            </tr>          
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+            			

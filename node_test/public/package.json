@@ -1,0 +1,9 @@
+{
+  "name": "chatrooms", <== Ten ung dung
+  "version": "0.0.1",
+  "description": "Minimalist multiroom chat server",
+  "dependencies": { <== Thu vien can thiet
+    "socket.io": "~0.9.6",
+     "mime": "~1.2.7"
+  }
+}

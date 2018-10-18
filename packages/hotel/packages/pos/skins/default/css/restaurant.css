@@ -1,0 +1,52 @@
+/* CSS Document */
+
+.menu_parent {
+	font-weight: bold;
+	background-color: F0F6DE;
+	width: 200px;
+	float: left;
+	border: 1px solid black;
+	color: #D6D2C2;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+.menu_child {
+	position: absolute;
+	visibility: hidden;
+	background-color: #C5E5BE;
+	color: #007F00;
+	border: 1px solid #83AD7F;
+	width: 150px;
+}
+.menu_lin {
+	display: block;
+	width: 145%;
+	text-decoration: none;
+	font-weight: 900;
+	color: #D6D2C2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #81AD7C;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+a.menu_lin:hover
+{
+	background-color:#E2F2DF;
+}
+.bar-id{
+	text-align:right;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:3px;
+}
+.bar-id label,
+.bar-id select,
+.bar-id span{
+	color:red;	
+}
+.bar-id span{
+	font-weight:bold;
+}

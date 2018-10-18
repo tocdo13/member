@@ -1,0 +1,34 @@
+.rooming-list-wrapper{
+	width:900px;
+	margin-top:20px;
+}
+.rooming-list-wrapper .header{
+	margin-bottom:20px;
+}
+.rooming-list-wrapper .report-title{
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+.rooming-list-wrapper .body{
+	padding:10px;
+	text-align:left;
+}
+.rooming-list-wrapper .body .traveller{
+	padding:5px;
+	float:left;
+	width:250px;
+	margin-bottom:2px;
+}
+.rooming-list-wrapper .body .time,.rooming-list-wrapper .body .special-request{
+	padding:5px;
+	float:left;
+	width:250px;
+	background-color:#EFEFEF;
+	border-bottom:1px solid #CCCCCC;
+	border-right:2px solid #CCCCCC;
+	margin-bottom:1px;
+	margin-right:1px;
+}
+.rooming-list-wrapper .body .special-request{
+	width:320px;
+}

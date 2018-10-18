@@ -1,0 +1,121 @@
+.room_input_class
+{
+	border:0px;
+	border-bottom:1px dotted #000000;
+	background-color:#FFFFFF;
+	font-style:italic;
+	font-size:12px;
+	letter-spacing:1px;
+}
+a.room_DRAG:hover,a.room:hover,a.room_BOOKED:hover,a.room_READY:hover,a.room_UNREADY:hover,a.room_OCCUPIED:hover,a.room_BUSY:hover,a.room_select,a.room_OVERDUE:hover,a.room_RESOVER:hover,a.room_SHORT_TERM:hover,a.room_CHECKOUT:hover{
+	background-color:#F0F6DE;
+	color:black;
+	text-decoration:none;
+	border:3px solid #F0F6DE;
+}
+a.room_DRAG,a.room,a.room_BOOKED,a.room_READY,a.room_UNREADY,a.room_OCCUPIED,a.room_BUSY,a.room_select,a.room_OVERDUE,a.room_RESOVER,a.room_SHORT_TERM,a.room_CHECKOUT{
+	width:70px;
+	height:65px;
+	text-align:center;
+	vertical-align:middle;
+	display:block;
+	font-size:13px;
+	line-height:15px;
+	padding-top:0px;
+	background-color:#FFFFFF;
+	color:black;
+	border:3px solid #F0F6DE;
+}
+
+a.room{
+	background-color:white;
+	border:1px solid #000000;
+}
+a.room_select{
+	background-color:#003366;
+	background-position:left;
+	background-position:top;
+	color:#FFFFFF;
+	font-weight:bold;
+	border:1px solid #FFFFFF;
+}
+a.room_select:hover{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+a.room_DRAG{
+	border:1px solid black;
+}
+a.room_BOOKED{
+	background-color:#FFFFFF;
+	color:black;
+	border:3px solid #0066FF;
+}
+a.room_UNREADY{
+	background-color:#FFFFFF;
+	border:3px solid #999999;
+}
+a.room_OCCUPIED{
+	background-color:#FFFFFF;
+	border:3px solid #FFFF00;
+}
+a.room_BUSY{
+	background-color:#FFFFFF;
+	color:black;
+	border:3px solid #666666;
+}
+a.room_OVERDUE{
+	background-color:#FFFFFF;
+	color:black;
+	border:3px solid #FF0000;
+}
+a.room_RESOVER{
+	background-color:#FFFFFF;
+	color:black;
+	border:3px solid #FF9900;
+}
+a.room_SHORT_TERM
+{
+	background-color:#EBEADC;
+	border:3px solid #EBEADC;
+}
+a.room_CHECKOUT
+{
+	color:black;
+	border:3px solid #99CCCC;
+}
+
+.room_arround
+{
+	border:1px solid #003399;
+}
+
+
+.label{
+	background-color:#FFFFFF;
+	width:100px;
+	overflow:hidden;
+}
+.value{
+	background-color:#FFFFFF;
+	width:190px;
+}
+a.room_map
+{
+	display:block;
+	color:#5D5959;
+	background-color:#FFFFFF;
+	border-bottom:1px solid #D1DBDC;
+	width:100%;
+	line-height:24px;
+	font-size:11px;
+	text-indent:10px;
+	font-weight:bold;
+	text-align:left;
+}
+a.room_map:hover
+{
+	color:#000000;
+	font-size:11px;
+	background-color:#EFEEEE;
+}

@@ -1,0 +1,19 @@
+.choise-audit-method-bound{
+	width:100%;
+	float:left;
+	text-align:center;
+	padding:10px;
+	padding-top:50px;
+}
+.choise-audit-method-table{
+	border:1px solid #CCCCCC;
+	margin-left:auto;
+	margin-right:auto;
+}
+.choise-audit-method-table .title{
+	background:url(../images/reservation_bg.jpg);
+}
+.night-audit-comfirmation{
+	color:#999999;
+	font-style:italic;
+}

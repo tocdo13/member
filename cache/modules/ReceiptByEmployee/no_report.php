@@ -1,0 +1,1 @@
+<?php echo Portal::language('no_data');?><br /><br /><br /><br /><br />

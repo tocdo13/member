@@ -1,0 +1,22 @@
+﻿----------------------ROOM-----19/07/2013-----------------------
+1) Room: 114 - Recode: 48 - Status: CHECKIN - Change price: 2,606,060.61 - Arrival time: 15h:02 19/07/2013 - Departure time: 12h:00 20/07/2013 - Link: ?page=reservation&cmd=edit&id=48&r_r_id=92&portal=default
+2) Room: 113 - Recode: 47 - Status: CHECKOUT - Change price: 2,606,060.61 - Arrival time: 13h:46 19/07/2013 - Departure time: 14h:44 19/07/2013 - Link: ?page=reservation&cmd=edit&id=47&r_r_id=91&portal=default
+3) Room: 112 - Recode: 44 - Status: CHECKIN - Change price: 2,346,320.35 - Arrival time: 14h:18 19/07/2013 - Departure time: 12h:00 20/07/2013 - Link: ?page=reservation&cmd=edit&id=44&r_r_id=88&portal=default
+4) Room: 111 - Recode: 43 - Status: CHECKOUT - Change price: 2,086,580.09 - Arrival time: 14h:16 19/07/2013 - Departure time: 14h:59 19/07/2013 - Link: ?page=reservation&cmd=edit&id=43&r_r_id=87&portal=default
+5) Room: 102 - Recode: 38 - Status: CHECKOUT - Change price: 3,298,701.30 - Arrival time: 09h:55 19/07/2013 - Departure time: 13h:49 19/07/2013 - Link: ?page=reservation&cmd=edit&id=38&r_r_id=82&portal=default
+6) Room: 105 - Recode: 37 - Status: CHECKOUT - Change price: 2,606,060.61 - Arrival time: 09h:49 19/07/2013 - Departure time: 09h:51 19/07/2013 - Link: ?page=reservation&cmd=edit&id=37&r_r_id=81&portal=default
+7) Room: 101 - Recode: 36 - Status: CHECKOUT - Change price: 2,606,060.61 - Arrival time: 08h:54 19/07/2013 - Departure time: 10h:07 19/07/2013 - Link: ?page=reservation&cmd=edit&id=36&r_r_id=80&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: YVES LAURENT - Room: 112 - Recode: 44 - Guest status: CHECKIN - Room arrival time: 14h:18 19/07/2013 - Room departure time: 12h:00 20/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+1) Room: 334 - Type: LATE CHECKIN - Recode: 40 - Status: BOOKED - Arrival time: 00h:00 19/07/2013 - Departure time: 00h:00 20/07/2013 - Link: ?page=extra_service_invoice&cmd=edit&id=2&portal=default
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

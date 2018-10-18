@@ -1,0 +1,97 @@
+    <div id="invoice" style="width: 100%; font-size:14px; margin: 0 auto; border: 1px solid #00b2f9; padding: 5px;">
+        <div class="item-body" style="float:left; width:100%;"><br /></div>
+        <table cellpadding="0" width="100%" border="0">
+        	<tr>
+        		<td width="20%" align="center" valign="top"><img src="E:/wamp/www/version18/resources/interfaces/images/default/logo.jpg" width="100%" /></td>
+        		<td width="60%" align="center">
+        			<div class="invoice-title" style="font-size:18px;font-weight:bold;color:#333333;margin:0px;padding:0px;">GROUP'S FOLIO</div>
+        			<div class="invoice-sub-title" style="font-size:18px;font-weight:bold;color:#333333;margin:0px;padding:0px;">PHIẾU THANH TOÁN NHÓM</div>
+        			<div class="invoice-contact-info" style="color:#666666;font-size:12px;">Hà Nội, Việt Nam</div>
+        			<div class="invoice-contact-info" style="color:#666666;font-size:12px;">Tel: (+84) 024.6282.7777 | Fax: </div>
+        			<div class="invoice-contact-info" style="color:#666666;font-size:12px;">Email: info@tcv.vn | Website: www.quanlyresort.com</div>
+        		</td>
+        		<td width="20%" align="left">
+        			<div>
+        			   <p><font style="font-size: 14px; color:red;">Folio:</font> <font style="font-size:15px;font-weight:200;color:red;">235</font><br /></p>
+                       <p><font style="font-size: 14px;color:red; ">Re_code:</font> <font style="font-size:15px;font-weight:200;color:red;">329</font><br /></p>
+                    </div>
+        		</td>
+        	</tr>
+    	</table>
+        <div class="item-body" style="float:left; width:100%;"><div class="seperator-line" style="border-bottom:1px solid #000000;float:left;width:100%;margin-bottom:10px;">&nbsp;</div></div>
+        <table cellpadding="0" width="100%">
+        	<tr valign="top">
+        		<td align="left" width="50%">
+        			<div class="item-body" style="float:left; width:100%;"><div>Customer / Khách hàng:ADSFS</div></div>
+        			<div class="item-body" style="float:left; width:100%;"><div>Traveller / Tên khách::G H</div></div>
+        			<div class="item-body" style="float:left; width:100%;"><div>Address / Địa chỉ::25 Tân Mai</div></div>
+                    <div class="item-body" style="float:left; width:100%;"><div>Arrival time ::10/05</div><div>Departure time ::11/05</div></div>
+                </td>
+        		<td align="right" width="50%">
+        			<div>Currency / Ti&#7873;n t&#7879;: VND</div>
+        			<div>Exchange Rate / Tỉ Giá: 25,000 <br /></div>
+                    <div>Print by:Lê Huyền TCV</div>
+                    <div>Print time : 09:43 10/05/18</div>
+                </td>
+            </tr>
+    	</table>
+        
+        <div class="item-body" style="float:left; width:100%;"><div class="seperator-line" style="border-bottom:1px solid #000000;float:left;width:100%;margin-bottom:10px;">&nbsp;</div></div>
+                <div class="item-body" style="float:left; width:100%;">
+            <table width="100%" >
+                <tr>
+                    <td align="left" valign="top">No</td>
+                    <td align="left" valign="top">Date</td>
+                    <td align="left" valign="top">Description</td>
+                    <td align="right" valign="top">Amount</td>
+                    <td align="right" valign="top">Ser.charge</td>
+                    <td align="right" valign="top">VAT Tax</td>
+                    <td align="right" valign="top">Total</td>
+                </tr>
+                                                            <tr>
+                                <td align="left" valign="top">1</td>
+                                <td align="left" valign="top">10-05-2018</td>
+                                <td align="left" valign="top">1001 Tiền phòng                                                                                                                                 </td>
+                                <td align="right" valign="top">2,100,000</td>
+                                <td align="right" valign="top">0</td>
+                                <td align="right" valign="top">0</td>
+                                <td align="right" valign="top">2,100,000</td>
+                            </tr>
+                                        </table>
+        </div>
+      <div style="float:right;">
+            <div>
+            	<b style="color:red"><em>Tổng : <span style="float:right;">2,100,000</span></em></b>
+            </div>
+                                    <hr />
+            <div style="float:right;">
+            	<b style="color:red"><em>Tổng thanh toán :<span style="float:right;">2,100,000</span></em></b>
+            </div>
+        </div>
+        <div class="item-body" style="float:left; width:100%;"><div class="seperator-line" style="border-bottom:1px solid #000000;float:left;width:100%;margin-bottom:10px;">&nbsp;</div></div>
+        <div style="float:right; width: 100%;"> 
+            <table width="100%" style="float:right;">
+              	<tr>
+              		<td align="center">Loại thanh toán</td>
+                    <td align="center">Số tài khoản/Số thẻ</td>
+                    <td align="center">Diển giải</td>
+                    <td align="center">Loại tiền</td>
+                    <td align="right">Tổng</td>
+                    <td align="right">Phí ngân hàng nếu có</td>
+                    <td align="right">Tổng phí ngân hàng</td>
+              	</tr>
+                
+                                    <tr>
+                  		<td align="center">Tiền mặt</td>
+                        <td align="center"></td>
+                        <td align="center"></td>
+                        <td align="center">VND</td>
+                        <td align="right">2,100,000                        <td align="right">0                        <td align="right">2,100,000                  	</tr>
+                                </table>
+        </div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          	<tr>
+            	<td height="100">&nbsp;</td>
+        	</tr>
+        </table>   
+    </div>

@@ -1,0 +1,194 @@
+/*-------------Module HomeMenu-------------------------*/
+.home-menu-bound{
+	margin-top:10px;
+}
+.home-menu-group-name{
+	clear:both;
+	background:#EFEFEF;
+	font-weight:bold;
+	font-size:14px;
+	text-align:left;
+	padding-left:10px;
+	color:#0D2EA1;
+	line-height:24px;
+}
+.home-menu-item{
+	float:left;
+	width:14%;
+	margin:10px;
+	padding:16px;
+	height:80px;
+	border:1px solid #CCCCCC;
+	background:#F7F7F7;
+	cursor:pointer;
+}
+
+.home-menu-item:hover a:link,
+.home-menu-item:hover a:visited,
+.home-menu-item:hover a:hover,
+.home-menu-item:hover a:visited:hover{
+	color:#FF0000;
+}
+.home-menu-function-bound{
+	
+}
+.home-menu-item-img{
+	text-align:center;
+}
+.home-menu-item-img img{
+	width:50px;
+	height:50px;
+}
+.home-menu-item-name{
+	text-align:center;
+}
+.home-menu-item-name a:link,.home-menu-item-name a:visited{
+	font-weight:bold;
+	color:#0D2EA1;
+	text-decoration:none;
+}
+.home-menu-item-name a:hover,
+.home-menu-item-name a:visited:hover{
+	color:#0080FF;
+}
+.readonly{background:#D7D7D6;}
+.legend-title{
+	text-transform:uppercase;
+	width:200px;
+	padding:3px;
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	border-left:2px solid #5BA5FF;
+	border-right:2px solid #5BA5FF;
+	color:#000000;
+	font-weight:bold;
+	font-size:11px;
+	background:#FFFFFF;	
+}
+.legend-title span{
+	color:#000000;
+}
+.legend-title:hover{
+	background:#CCFFCC;
+}
+.room-extra-info{
+	background:#FFFFFF;
+	padding-top:10px;
+	padding-bottom:10px;
+	border:1px solid #FFCC99;
+}
+.room-extra-info.cancel{
+	background:#CCCCCC;
+	color:#999999;
+	border:1px solid #999999;
+}
+.room-extra-info.cancel input,.room-extra-info.cancel span,.room-extra-info.cancel .label{
+	color:#999999;
+	background-color:#DDDDDD;
+	border:1px solid #CCCCCC;
+}
+.multi-input{
+	float:left;
+}
+.multi-input input{
+	font-size:11px;
+}
+.multi-input-extra input{
+	font-size:11px;
+	width:105px;
+	margin-right:5px;
+	margin-bottom:2px;
+	float:left;
+}
+
+.multi-input-extra .label{
+	float:left;
+	width:107px;
+	text-align:right;
+	margin-right:2px;
+	padding-top:2px;
+	font-size:11px;
+	padding:0px;
+}
+.report-title{
+	font-size:16px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.label{
+	padding-right:5px;
+}
+/*--------------------- Chat -----------------------------------------*/
+.chat-bound{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	width:150px;
+	background-color:#FFFFFF;
+	padding:5px;
+	border:1px solid #0000FF;
+}
+* html .chat-bound{ 
+	position: absolute;
+}
+
+.chat-title{
+	font-weight:bold;
+	padding-bottom:5px;
+}
+.chat-title img{
+	cursor:pointer;
+	margin-left:110px;
+}
+.select-item,.select-item:visited{
+	color:#FF0000;
+	font-weight:bold;
+	text-decoration:none;
+	padding:0px 2px 0px 2px;
+	border:1px solid #00CCFF;
+	background:#FFFFCC;
+}
+.warning-box{
+	border:1px solid #CCCCCC;
+	width:300px;
+	margin:5px;
+}
+.warning-box .title{
+	font-size:14px;
+	font-weight:bold;
+	background:#EFEFEF;
+	padding-left:5px;
+	color:#FF0000;
+	border-bottom:1px solid #CCCCCC;
+}
+.warning-box .content{
+	padding:5px;
+}
+.reservation-list-item{
+	font-size:12px;
+	border-bottom:1px solid #CCCCCC;
+}
+a.view-invoice-button,a.view-invoice-button:visited{
+	color:#F30;
+	border:1px solid #CCCCCC;
+	background:url(../../../../core/skins/default/images/bg.png);
+	padding:2px 5px 2px 5px;
+	font-size:11px;
+}
+.invoice-option{
+	font-size:11px;
+}
+.view-registration-form{
+	font-size:11px;
+	padding-left:20px;
+	background:url(../../../../core/skins/default/images/buttons/form.png) no-repeat 0px 50%;
+}
+.change-price-input{
+	text-align:right;
+	font-size:11px;
+    width: 60px !important;
+}
+.change-price-input.readonly{
+	background-color:#EFEFEF;
+}
+.mask{width:100%;height:1000px;background-color:#999;position:relative;z-index:1000;float:left;display:none;text-align:center;font-size:20px;font-weight:bold;color:#FFFFFF;padding-top:20px;}

@@ -1,0 +1,55 @@
+a.report_table_header
+{
+	background-color:#FFFFFF;
+	font-weight:bold;
+	font-size:12px;
+	line-height:20px;
+	color:#000000;
+	text-align:center;
+}
+.report_table_header
+{
+	background-color:#FFFFFF;
+	font-weight:bold;
+	font-size:12px;
+	padding:5px;
+	color:#000000;
+}
+.report_table_column
+{
+	padding:3px;
+}
+.report_table_column1
+{
+	padding:0px;
+}
+a.td_title
+{
+	color:#000000;
+}
+.report_title
+{
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+}
+.report_sub_title
+{
+	font-weight:normal;
+	padding:5px;
+}
+.report-bound
+{
+}
+@page port {size: portrait;}
+@page land {size: landscape;}
+.landscape {page: land;}
+#printer
+{
+	width:99%;
+	height:100%;
+	text-align:center;
+	vertical-align:middle;
+	background-color:white;
+}

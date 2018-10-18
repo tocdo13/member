@@ -1,0 +1,168 @@
+#home_panel{
+	width:670px;
+	margin:0 auto;
+}
+#home_panel .root{
+	text-align:center;
+	color:#000000;
+	font-size:14px;
+	font-weight:bold;
+	background-color:#9BF87F;
+	background:url(../images/room_bg.jpg) no-repeat 50% 50%;
+	border:5px solid #0099CC;
+	border-top:1px dotted #0099CC;
+	border-bottom:1px dotted #0099CC;
+	padding:10px 0px 10px 0px;
+	width:150px;
+}
+#home_panel .reception,#home_panel .director,#home_panel .housekeeping,#home_panel .sales,#home_panel .restaurant,
+#home_panel .accounting-report,#home_panel .massage,#home_panel .warehouse,#home_panel .tennis,#home_panel .swimming{
+	cursor:pointer;
+	text-align:center;
+	color:#FF3300;
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+	background:#FFCC00;
+	border:1px solid #CCCCCC;
+	padding:5px 0px 5px 0px;
+	width:100px;
+}
+#home_panel .reception{
+	color:#CCCCCC;
+	background:#0066CC;
+	border-bottom:2px solid #CCCCCC;
+}
+#home_panel .director{
+	border-bottom:2px solid #FF3300;
+	border-right:1px solid #CCCCCC;
+
+}
+#home_panel .housekeeping{
+	color:#006699;
+	background:#B0D8FF;
+	border-top:2px solid #006699;
+}
+
+#home_panel .sales{
+	color:#FF33CC;
+	background:#FFCCCC;
+	border-top:2px solid #FF33CC;
+}
+
+#home_panel .restaurant{
+	color:#FFFFFF;
+	background:#FF3300;
+	border-top:2px solid #0099CC;
+}
+#home_panel .accounting-report{
+	color:#999999;
+	background:#FFFFCC;
+	border-top:2px solid #6666FF;
+}
+#home_panel .massage{
+	color:#FFFFFF;
+	background:#99CC00;
+	border-top:2px solid #999900;
+}
+#home_panel .warehouse{
+	color:#999999;
+	background:#CCCCCC;
+	border-top:2px solid #999999;
+}
+#home_panel .tennis{
+	color:#99CC00;
+	background:#FFFF99;
+	border-top:2px solid #99CC00;
+}
+#home_panel .swimming{
+	color:#FFFFFF;
+	background:#0099CC;
+	border-top:2px solid #0000FF;
+}
+#home_panel .reception-connector{
+	border-top:1px dotted #0099CC;
+	border-right:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .director-connector{
+	border-top:1px dotted #0099CC;
+	border-left:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .housekeeping-connector{
+	border-top:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .sales-connector{
+	border-top:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .restaurant-connector{
+	border-top:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .massage-connector{
+	border-top:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .accounting-report-connector{
+	border-top:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .warehouse-connector{
+	border-top:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .tennis-connector{
+	border-bottom:1px dotted #0099CC;
+	border-right:1px dotted #0099CC;
+	width:20%;
+}
+#home_panel .swimming-connector{
+	border-bottom:1px dotted #0099CC;
+	border-left:1px dotted #0099CC;
+	width:20%;
+}
+/*---------------------------- home_page edit --------------------*/
+.img-icon-home{
+	height:64px;
+	cursor:pointer;
+}
+.icon{
+	border:1px solid #CCCCCC;
+	padding:0px;
+	height:94px;
+	width:120px;
+	padding-top:2px;
+}
+.icon-home{
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+.bod{
+	border:1px solid #CCCCCC;
+	padding:5px;
+	width:120px;
+}
+.icon-name{
+	color:#1F27D0;
+	font-weight:bold;
+	font-size:14px;
+	width:120px;
+	text-align:center;
+	padding-bottom:0px;
+	margin:0xp;
+}
+.root-hms{
+background:url(../images/room_bg.jpg) no-repeat center;	
+width:163px;
+height:100px;
+text-align:center;
+font-size:14px;
+font-weight:bold;
+padding-top:70px;
+border:4px solid #4BB848;
+margin-left:-3px;
+}

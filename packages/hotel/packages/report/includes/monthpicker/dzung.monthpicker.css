@@ -1,0 +1,100 @@
+#dzung-hidden-dialog{
+	font-family:tahoma;
+	width:183px;
+	border:solid 1px silver;
+	float:left;
+	padding:5px;
+	background:#FFF;
+	position:absolute;
+	display:none;
+	user-select:none;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+#dzung-hidden-dialog ul{
+	display:inline;
+	list-style:none;
+	float:left;
+	padding:0;
+	margin:0;
+}
+#dzung-hidden-dialog div{float:left;}
+#dzung-hidden-dialog li:hover{
+	text-decoration:underline; 
+	font-weight: bold;
+}
+#dzung-hidden-dialog li{
+	display:inline;
+	list-style:none;
+	border:solid 1px silver;
+	margin:2px;
+	float:left;
+	cursor:pointer;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+#dzung-years-container{
+	float:left;
+	width:155px;
+	overflow:hidden;
+}
+#dzung-prev-year{
+	background : url('prev.png') no-repeat;
+}
+#dzung-next-year{
+	background : url('next.png') no-repeat;
+}
+#dzung-prev-year,#dzung-next-year{
+	display:block;
+	width:14px;
+	height:38px;
+	cursor:pointer;
+	margin-top:5px;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+}
+#dzung-prev-year:hover,#dzung-next-year:hover{
+	opacity:0.85;
+	filter:alpha(opacity=85);
+}
+#dzung-select-year{width:155px;}
+ul#dzung-select-year li{
+	font-size:14px;
+	width:45px;
+	line-height:35px;
+	text-align:center;
+	font-weight:bold;
+}
+ul#dzung-select-month li{
+	font-size:12px;
+	width:39px;
+	line-height:20px;
+	text-align:center;
+}
+#dzung-hidden-month{
+	padding-left:1px;
+	display:none;
+	margin-top: 5px;
+}
+.selected_item{
+	color:red;
+	background:#F8F8F8;
+	font-weight:bold;
+}
+#dzung-close-dialog{
+	padding:0;
+	float:right;
+	color:red;
+	width:15px !important;
+	line-height:15px !important;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+}

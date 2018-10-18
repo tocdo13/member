@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-size: 13px;
+    font-family: sans-serif, Arial, serif;
+}
+body {
+    position: relative;
+}
+.simple-layout-middle{
+    width:100%;
+}
+.simple-layout-content{
+    padding: 0px; border: none;
+}
+.BOOKED-NOT-ASIGN {
+    background: #00B2F9;
+}
+.BOOKED-DO-NOT-MOVE {
+    background: #9933ff;
+}
+.BOOKED {
+    background: #5290CA;
+}
+.OCCUPIED {
+    background: #EFE87D;
+}
+.CHECKOUT {
+    background: #ff0066;
+}
+.REPAIR {
+    background: #606060;
+}
+.HOUSEUSE {
+    background: #ff6600;
+}
+.CLOSE {
+    background: #33CC00;
+}
+
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.icon-button {
+    height: 25px;
+    min-width: 25px;
+    line-height: 25px;
+    margin: 0px;
+    padding: 0px 5px;
+    border: 1px solid #EEEEEE;
+    text-align: center;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #171717;
+}
+.icon-button:hover {
+    background: #171717;
+    color: #FFFFFF;
+}
+.icon-button i {
+    line-height: 25px;
+}
+.bg_rooms_day_hover {
+    background: #F9F9F9!important;
+}
+.day-new {
+    background: #FFFFFF;
+}
+.day-old {
+    background: #bdc3c7;
+}

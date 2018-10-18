@@ -1,0 +1,290 @@
+/** header **/
+#MonthlyRoomReportHeader {
+    width: 98%;
+    padding-right: 2%;
+    height: 35px;
+    border-bottom: 1px solid #1297FB;
+    z-index: 9999!important;
+    background: #FFFFFF;
+}
+#MonthlyRoomReportHeader form ul {
+    list-style: none;
+    background: #FFFFFF;
+}
+#MonthlyRoomReportHeader form > ul > li {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    padding: 0px 5px;
+    margin: 0px;
+    background: #FFFFFF;
+    transition: all 0.3s ease-out;
+    color: #171717;
+    position: relative;
+}
+#MonthlyRoomReportHeader form > ul > li:first-child {
+    background: #2D2D30;
+    color: #1297FB;
+    padding: 0px 10px;
+}
+#MonthlyRoomReportHeader form > ul > li > h3 {
+    line-height: 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#MonthlyRoomReportHeader form > ul > li > input[type='text']{
+    width: 80px;
+    height: 19px;
+    margin: 2.5px;
+    text-align: center;
+    padding: 2.5px;
+    border: 1px solid #EEEEEE;
+}
+#MonthlyRoomReportHeader form > ul > li > select {
+    width: 100px;
+    height: 23px;
+    margin: 2.5px;
+    text-align: center;
+    padding: 2.5px;
+    border: 1px solid #EEEEEE;
+}
+#MonthlyRoomReportHeader form > ul > li > div {
+    margin: 4px 0px;
+}
+#MonthlyRoomReportHeader form > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    background: #FFFFFF;
+    transition: all 0.3s ease-out;
+    color: #171717;
+    width: 240px;
+    height: auto;
+    border: 1px solid #EEEEEE;
+    z-index: 9999!important;
+    box-shadow: 0px 0px 3px #555555;
+}
+#MonthlyRoomReportHeader form > ul > li:hover > ul {
+    display: block;
+}
+#MonthlyRoomReportHeader form > ul > li > ul > li {
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #EEEEEE;
+    background: #FFFFFF;
+}
+#MonthlyRoomReportHeader form > ul > li > ul > li:hover {
+    background: #EEEEEE;
+    font-weight: bold;
+}
+#MonthlyRoomReportHeader form > ul > li > ul > li > div {
+    float: left;
+    border: 1px solid #EEEEEE;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #EEEEEE;
+    margin: 4.5px 5px 4.5px 0px;
+}
+#MonthlyRoomReportHeader form > ul > li > ul > li > a {
+    text-decoration: none;
+    color: #171717!important;
+}
+
+/******/
+
+#TimeLine {
+    margin: 0px auto 10px; 
+    padding: 0px; 
+    position: relative;
+}
+.content_hidden {
+    overflow: hidden;
+}
+#header {
+    margin: 0px; padding: 0px; clear: both; transition: all 0.3s ease-out;
+}
+.header_position {
+    position: relative;
+}
+.header_position-fixed {
+    position: fixed;
+    z-index: 9999999;
+}
+.header_position-fixed .box-scroll-hidden {
+    display: none;
+}
+.header_items_title {
+    border: 0.5px solid #DDDDDD; position: absolute; top: 0px; left: 0px;
+    font-size: 11px; font-weight: bold; text-align: center; text-transform: uppercase;
+}
+.header_items {
+    border: 0.5px solid #DDDDDD; position: absolute; top: 0px;
+    font-size: 10px; text-align: center;
+    transition: all 0.3s ease-out;
+}
+.header_items span {
+    font-size: 9px;
+}
+
+.rooms {
+    position: relative; margin: 0px; padding: 0px; clear: both;
+}
+.rooms_items_title {
+    border: 0.5px solid #DDDDDD; position: absolute; top: 0px; left: 0px;
+    font-size: 11px; text-align: center;
+}
+.rooms_items_title p {
+    float: right; padding-right: 10px;
+    font-size: 11px;
+}
+.rooms_items_title span {
+    float: left; padding-left: 10px;
+    clear: both; font-size: 9px;
+}
+.rooms_items {
+    border: 0.5px dashed #DDDDDD; position: absolute;
+    font-size: 11px; text-align: center;
+    top:0px;
+}
+.rooms_reservations {
+    border: 0.5px dashed #DDDDDD; 
+    position: absolute; 
+    font-size: 9px; text-align: center;
+    cursor: pointer;
+}
+.room_items_select {
+    background: #bbff33!important;
+    
+}
+.div-index {
+    z-index: 999999!important;
+}
+/**********/
+
+#ToolNav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+    height: auto;
+    z-index: 99999;
+    background: #2D2D30;
+    border: 1px solid #4B4B4D;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 3px #4B4B4D;
+}
+#ToolNav ul {
+    list-style: none;
+}
+#ToolNav ul li {
+    display: block;
+    width: 96%;
+    padding: 3px 2%;
+    height: 30px;
+    border-bottom: 1px solid #4B4B4D;
+    color: #1297FB;
+    background: #2D2D30;
+    transition: all 0.15s ease-out;
+    line-height: 30px;
+    cursor: pointer;
+}
+#ToolNav ul li:first-child {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #4B4B4D;
+    text-align: center;
+}
+#ToolNav ul li:last-child {
+    border-bottom: none;
+}
+#ToolNav ul li:hover {
+    color: #FFFFFF;
+    background: #4B4B4D;
+}
+#ToolNav ul li i {
+    margin-right: 5px;
+}
+
+/*******/
+#AjaxLoadingData {
+    position: fixed;
+    z-index: 999999;
+    background: rgba(255,255,255,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+#AjaxLoadingData img {
+    margin: 240px auto;
+}
+
+/*****/
+#AjaxLightboxContent {
+    position: fixed;
+    z-index: 999999;
+    background: rgba(255,255,255,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+#AjaxLightboxContent #AjaxLightboxContentBody {
+    width: 320px;
+    min-height: 100px;
+    background: #2D2D30;
+    border: 1px solid #4B4B4D;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 3px #4B4B4D;
+    margin: 100px auto auto;
+}
+#AjaxLightboxContent #AjaxLightboxContentBody #AjaxLightboxContentHeader {
+    width: 310px;
+    height: 35px;
+    color: #FFFFFF;
+    background: #4B4B4D;
+    text-align: center;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+#AjaxLightboxContent #AjaxLightboxContentBody #AjaxLightboxContentMain {
+    width: 310px;
+    min-height: 50px;
+    color: #1297FB;
+    text-align: left;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+#AjaxLightboxContent #AjaxLightboxContentBody #AjaxLightboxContentFooter {
+    width: 310px;
+    height: 35px;
+    color: #FFFFFF;
+    border-top: 1px solid #4B4B4D;
+    text-align: center;
+    line-height: 35px;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+#AjaxLightboxContent #AjaxLightboxContentBody #AjaxLightboxContentFooter .AjaxLightboxContentButton {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #4B4B4D;
+    background: #2D2D30;
+    color: #FFFFFF;
+    padding: 2.5px 5px;
+    cursor: pointer;
+}
+#AjaxLightboxContent #AjaxLightboxContentBody #AjaxLightboxContentFooter .AjaxLightboxContentButton:hover {
+    border: 1px solid #1297FB;
+    background: #4B4B4D;
+    color: #1297FB;
+}
+

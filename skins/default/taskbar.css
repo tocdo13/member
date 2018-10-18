@@ -1,0 +1,57 @@
+.taskbar_tab,.taskbar_tab_active
+{
+width:100%;
+height:25px;
+line-height:25px;
+vertical-align:baseline;
+text-align:left;
+text-indent:10px;
+color:#FFFFFF;
+font-size:14px;
+background-color:#CA0000;
+cursor:hand;
+border-collapse:collapse;
+border-bottom:1px solid #FFFFFF;
+}
+.taskbar_tab
+{
+background-color:#EEEEEE;
+color:black;
+}
+a.taskbar_item,a.taskbar_item_active
+{
+width:100%;
+line-height:24px;
+text-indent:5px;
+padding:5px 0px 5px 0px;
+vertical-align:middle;
+text-align:left;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+color:black;
+display:block;
+font-weight:normal;
+}
+a.taskbar_item:hover,a.taskbar_item_active:hover
+{
+	background-color:#EBEADB;
+}
+a.taskbar_item_active
+{
+	color:black;
+	background-color:#EBEADB;
+}
+a.taskbar_item_active:hover
+{
+	color:black;
+}
+.taskbar_frame{
+width:100%;
+background-color:white;
+border-top:1px solid white;
+}
+.div_taskbar
+{
+	border:1px solid #7F9DB9;
+	padding:3 3 3 3;
+}

@@ -1,0 +1,22 @@
+<!--IF:row_number([[=live_day.row_number=]]%25==0)-->
+<div class="to-be-continued">[[.to_be_continued.]]</div><div style="page-break-before:always;"></div>
+<table cellpadding="0" width="100%" border="0">
+<tr>
+	<td height="100">&nbsp;</td>
+</tr>
+</table>
+	<!--/IF:row_number-->
+	<!--IF:currency_cond([[=currencies=]] and Url::get('type')!='SERVICE' and Url::get('type')!='ROOM')-->
+	<div  class="sub-item-body" style="display:none;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+		  <tr>
+			<div width="90%">Payment by / Tr&#7843; b&#7857;ng:</div>
+			<?php $i=0;?>
+			<!--LIST:currencies-->
+			<?php $i++;?>
+			<div nowrap="nowrap">[[|currencies.name|]] <?php echo System::display_number(System::calculate_number([[=currencies.amount=]]));?></div>
+			<!--/LIST:currencies-->
+		  </tr>
+		</table>
+	</div>
+	<!--/IF:currency_cond-->

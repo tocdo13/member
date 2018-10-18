@@ -1,0 +1,14 @@
+﻿----------------------ROOM-----13/09/2013-----------------------
+1) Room: 111 - Recode: 10 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:28 13/09/2013 - Departure time: 12h:00 14/09/2013 - Link: ?page=reservation&cmd=edit&id=10&r_r_id=1&portal=default
+
+
+----------------------GUEST----------------------------
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

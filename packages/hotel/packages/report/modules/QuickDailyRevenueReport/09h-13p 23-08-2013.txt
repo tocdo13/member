@@ -1,0 +1,14 @@
+﻿----------------------ROOM-----23/08/2013-----------------------
+1) Room: 308 - Recode: 41 - Status: CHECKIN - Change price: 2,346,320.35 - Arrival time: 13h:45 22/08/2013 - Departure time: 12h:00 25/08/2013 - Link: ?page=reservation&cmd=edit&id=41&r_r_id=77&portal=default
+
+
+----------------------GUEST----------------------------
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

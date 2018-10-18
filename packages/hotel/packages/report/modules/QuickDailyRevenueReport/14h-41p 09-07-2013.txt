@@ -1,0 +1,24 @@
+﻿----------------------ROOM-----09/07/2013-----------------------
+1) Room: 103 - Recode: 57 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 14h:41 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=57&r_r_id=77&portal=default
+2) Room: 201 - Recode: 56 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 14h:34 07/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=56&r_r_id=75&portal=default
+3) Room: 525 - Recode: 55 - Status: CHECKIN - Change price: 3,000,000 - Arrival time: 13h:37 09/07/2013 - Departure time: 12h:00 11/07/2013 - Link: ?page=reservation&cmd=edit&id=55&r_r_id=74&portal=default
+4) Room: 104 - Recode: 53 - Status: CHECKIN - Change price: 2,700,000 - Arrival time: 12h:00 09/07/2013 - Departure time: 12h:00 10/07/2013 - Link: ?page=reservation&cmd=edit&id=53&r_r_id=72&portal=default
+5) Room: 303 - Recode: 51 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 09h:38 09/07/2013 - Departure time: 12h:00 10/07/2013 - Link: ?page=reservation&cmd=edit&id=51&r_r_id=68&portal=default
+6) Room: 203 - Recode: 48 - Status: CHECKIN - Change price: 2,400,000 - Arrival time: 09h:28 09/07/2013 - Departure time: 12h:00 10/07/2013 - Link: ?page=reservation&cmd=edit&id=48&r_r_id=65&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name: THAI THUY TRINH - Room: 103 - Recode: 57 - Guest status: CHECKIN - Room arrival time: 14h:41 09/07/2013 - Room departure time: 12h:00 11/07/2013
+2) Full name: TRAN PHU - Room: 201 - Recode: 56 - Guest status: CHECKIN - Room arrival time: 14h:34 07/07/2013 - Room departure time: 12h:00 11/07/2013
+3) Full name: TEST DOI PHONG - Room: 525 - Recode: 55 - Guest status: CHECKIN - Room arrival time: 13h:37 09/07/2013 - Room departure time: 12h:00 11/07/2013
+4) Full name: THAI THUY TRINH - Room: 104 - Recode: 53 - Guest status: CHECKIN - Room arrival time: 12h:00 09/07/2013 - Room departure time: 12h:00 10/07/2013
+5) Full name: AA Â - Room: 303 - Recode: 51 - Guest status: CHECKIN - Room arrival time: 09h:38 09/07/2013 - Room departure time: 12h:00 10/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------

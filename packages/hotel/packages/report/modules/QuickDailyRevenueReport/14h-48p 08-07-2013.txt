@@ -1,0 +1,19 @@
+﻿----------------------ROOM-----06/07/2013-----------------------
+1) Room: 101 - Recode: 46 - Status: CHECKOUT - Change price: 3,020,000 - Arrival time: 14h:44 05/07/2013 - Departure time: 14h:45 08/07/2013 - Link: ?page=reservation&cmd=edit&id=46&r_r_id=62&portal=default
+2) Room: 103 - Recode: 45 - Status: CHECKOUT - Change price: 2,420,000 - Arrival time: 11h:36 05/07/2013 - Departure time: 11h:39 08/07/2013 - Link: ?page=reservation&cmd=edit&id=45&r_r_id=60&portal=default
+3) Room: 105 - Recode: 43 - Status: CHECKOUT - Change price: 3,020,000 - Arrival time: 11h:25 05/07/2013 - Departure time: 11h:29 08/07/2013 - Link: ?page=reservation&cmd=edit&id=43&r_r_id=57&portal=default
+
+
+----------------------GUEST----------------------------
+1) Full name:   - Room: 101 - Recode: 46 - Guest status:  - Room arrival time: 14h:44 05/07/2013 - Room departure time: 14h:45 08/07/2013
+2) Full name: 123 TEST - Room: 103 - Recode: 45 - Guest status: CHECKOUT - Room arrival time: 11h:36 05/07/2013 - Room departure time: 11h:39 08/07/2013
+3) Full name: TEST KHACH IN - Room: 105 - Recode: 43 - Guest status: CHECKOUT - Room arrival time: 11h:25 05/07/2013 - Room departure time: 11h:29 08/07/2013
+
+
+----------------------LATE CHECKIN, LATE OUT, EARLY IN----------------------------
+
+
+----------------------IGNORE LATE CHECKIN AND DAYUSED----------------------------
+
+
+----------------------GUEST LATE OUT----------------------------
