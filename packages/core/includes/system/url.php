@@ -6,7 +6,7 @@ EDITED BY KHOAND
 ******************************/
 class Url
 {
-	static public $root = 'ver18fixtosilverland/';
+	static public $root = 'member/';
 	function build_all($except=array(), $addition=false)
 	{
 		$url=false;

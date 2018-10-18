@@ -6,31 +6,6 @@ global $plugins;
 $plugins = array (
 );
 $blocks = array (
-  12 => 
-  array (
-    'id' => '12',
-    'module_id' => '1392',
-    'page_id' => '7',
-    'container_id' => '0',
-    'region' => 'banner',
-    'position' => '1',
-    'skin_name' => NULL,
-    'layout' => NULL,
-    'name' => NULL,
-    'settings' => 
-    array (
-    ),
-    'module' => 
-    array (
-      'id' => '1392',
-      'name' => 'Menu',
-      'path' => 'packages/cms/modules/Menu/',
-      'type' => NULL,
-      'action_module_id' => NULL,
-      'use_dblclick' => NULL,
-      'package_id' => '17',
-    ),
-  ),
   373 => 
   array (
     'id' => '373',
@@ -54,6 +29,31 @@ $blocks = array (
       'action_module_id' => NULL,
       'use_dblclick' => NULL,
       'package_id' => '18',
+    ),
+  ),
+  12 => 
+  array (
+    'id' => '12',
+    'module_id' => '1392',
+    'page_id' => '7',
+    'container_id' => '0',
+    'region' => 'banner',
+    'position' => '1',
+    'skin_name' => NULL,
+    'layout' => NULL,
+    'name' => NULL,
+    'settings' => 
+    array (
+    ),
+    'module' => 
+    array (
+      'id' => '1392',
+      'name' => 'Menu',
+      'path' => 'packages/cms/modules/Menu/',
+      'type' => NULL,
+      'action_module_id' => NULL,
+      'use_dblclick' => NULL,
+      'package_id' => '17',
     ),
   ),
 );
